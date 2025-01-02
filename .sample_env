@@ -1,0 +1,2 @@
+# APPEND FRONTENT ENVvars with VITE_ prefix
+VITE_API_URL=""
