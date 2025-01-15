@@ -3,9 +3,9 @@ import { discordService } from "../services/discordService.js";
 import { AppError } from "../middleware/errorHandler.js";
 
 export const getScheduledEvents = async (
-  req: Request, 
+  _req: Request,
   res: Response,
-  next: NextFunction
+  _next: NextFunction
 ) => {
   try {
     const guildId = String(process.env.DISCORD_GUILD_ID);
