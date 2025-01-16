@@ -6,22 +6,8 @@ import {
 } from '@mantine/core';
 
  const themeOverride = createTheme({
-  colors: {
-    // Add your color
-    'white': [
-      '#FFF8EB',
-      '#FFF4E2',
-      '#FFF1D9',
-      '#FFF0D5',
-      '#FFF0D1',
-      '#FEEAC8',
-      '#FEE4BF',
-      '#FEDFB6',
-      '#FDD9AD',
-      '#FDD3A4',
-    ]
-
-  },
+  white: '#FFF0D1',
+  black: '#132F1A',
 
   shadows: {
     md: '1px 1px 3px rgba(0, 0, 0, .25)',

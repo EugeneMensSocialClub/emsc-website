@@ -1,5 +1,5 @@
-#root {
-  flex: 1;
+/* #root {
+  min-height: 100vh;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -68,4 +68,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
