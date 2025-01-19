@@ -18,6 +18,7 @@ import {
     fontFamily: 'Roboto, sans-serif',
     sizes: {
       h1: { fontSize: rem(51.2) },
+      h2: { fontSize: rem(39.4) },
     },
   },
 });
