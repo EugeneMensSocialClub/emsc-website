@@ -6,14 +6,16 @@ import {
   Title,
   Text,
   Image,
+  Paper,
+  Overlay,
 } from "@mantine/core";
+import { Carousel } from "@mantine/carousel";
 import logo from "../assets/images/emsc-logo.png";
-import placeholder from "../assets/images/placeholder.svg";
-import layoverImage from "../assets/images/layover-meetup.png";
-import craftParty from "../assets/images/craft-party.png";
-import smallGroup from "../assets/images/small-group-pnw.png";
-import wholeGroup from "../assets/images/whole-group-chambers.png";
+import layoverImage from "../assets/images/Layover.png";
+import craftParty from "../assets/images/CraftParty.png";
+import smallGroup from "../assets/images/SmallGroup.png";
 import threePeople from "../assets/images/three-people-chill-drinks.png";
+import dropBear from "../assets/images/drop-bear.png";
 import "../assets/stylesheets/homepage.css";
 
 export function HomeRoute() {
@@ -56,9 +58,10 @@ export function HomeRoute() {
                 <Title size="h2">Welcome to the Club</Title>
                 <Text className="textBody">
                   What began as a small gathering in October 2022 has blossomed
-                  into Eugene Men's Social Club (EMSC)—a vibrant and diverse
-                  community where countless members have discovered some of
-                  their closest friendships since moving to the Eugene area.
+                  into Eugene Men's Social Club (EMSC)—a vibrant, diverse and
+                  inclusive community where countless members have discovered
+                  some of their closest friendships since moving to the Eugene
+                  area.
                 </Text>
                 <Text className="textBody">
                   Today, EMSC proudly boasts a membership of over 800 men and
@@ -103,7 +106,7 @@ export function HomeRoute() {
             </Flex>
             <Image
               className="imageRight"
-              src={wholeGroup}
+              src={dropBear}
               h={"50vh"}
               w={"50vw"}
             />
@@ -113,34 +116,138 @@ export function HomeRoute() {
           <Center className="tesmonialTitleContainer">
             <Title size="h1"> Stories from our Members</Title>
           </Center>
-          <Flex justify={"space-around"}>
-            <BackgroundImage
+          <Center>
+            <Carousel
+              slideSize={{ base: "100%", sm: "75%" }}
+              slideGap={"xl"}
+              controlsOffset={"xl"}
+              maw={1280}
+              loop
+            >
+              <Carousel.Slide>
+                <Paper
+                  shadow="md"
+                  p="xl"
+                  radius="md"
+                  h={500}
+                  style={{ backgroundImage: `url(${layoverImage})` }}
+                  className="card"
+                  id="card"
+                >
+                  <div></div>
+                  <div className="quoteContainer">
+                    <Text ta="center">
+                      "If it weren’t for the Eugene men’s social club, I
+                      would’ve been alone waiting for my connecting flight."
+                    </Text>
+                    <Text>
+                      <b>PETER M.</b>
+                    </Text>
+                  </div>
+
+                  <Overlay
+                    gradient="linear-gradient(360deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 50%)"
+                    opacity={0.85}
+                    zIndex={0}
+                  />
+                </Paper>
+                {/* <Image src={layoverImage} /> */}
+              </Carousel.Slide>
+              <Carousel.Slide>
+                <Paper
+                  shadow="md"
+                  p="xl"
+                  radius="md"
+                  h={500}
+                  style={{ backgroundImage: `url(${craftParty})` }}
+                  className="card"
+                  id="card"
+                >
+                  <div></div>
+                  <div className="quoteContainer">
+                    <Text ta="center">
+                      "Being a part of the Eugene Men's Social Club has brought
+                      me community and healing in a way I didn't know I needed
+                      in my life."
+                    </Text>
+                    <Text>
+                      <b>TESANA B.</b>
+                    </Text>
+                  </div>
+                  <Overlay
+                    gradient="linear-gradient(360deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 50%)"
+                    opacity={0.85}
+                    zIndex={0}
+                  />
+                </Paper>
+                {/* <Image src={craftParty} /> */}
+              </Carousel.Slide>
+              <Carousel.Slide>
+                <Paper
+                  shadow="md"
+                  p="xl"
+                  radius="md"
+                  h={500}
+                  style={{ backgroundImage: `url(${smallGroup})` }}
+                  className="card"
+                  id="card"
+                >
+                  <div></div>
+                  <div className="quoteContainer">
+                    <Text ta="center">
+                      "After living in Eugene for almost two years, this group
+                      gave me a powerful method of making wonderful freinds in a
+                      city where it had proven hard to meet people."
+                    </Text>
+                    <Text>
+                      <b>JOSHUA G.</b>
+                    </Text>
+                  </div>
+                  <Overlay
+                    gradient="linear-gradient(360deg, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, 0) 50%)"
+                    opacity={0.85}
+                    zIndex={0}
+                  />
+                </Paper>
+                {/* <Image src={smallGroup} /> */}
+              </Carousel.Slide>
+            </Carousel>
+          </Center>
+
+          {/* <BackgroundImage
               radius={"md"}
               h={"40vh"}
               w={"30vw"}
               src={layoverImage}
             >
-              <Box>
-                <Text></Text>
-              </Box>
-            </BackgroundImage>
-            <BackgroundImage
+              {" "}
+            </BackgroundImage> */}
+          {/* <Image radius={"md"} h={"40vh"} w={"30vw"} src={layoverImage} />
+            <Box>
+              <Text></Text>
+            </Box> */}
+          {/* <BackgroundImage
               radius={"lg"}
               h={"40vh"}
               w={"30vw"}
               src={craftParty}
             >
-              <Box></Box>
-            </BackgroundImage>
-            <BackgroundImage
+              {" "}
+            </BackgroundImage> */}
+
+          {/* <Image radius={"md"} h={"40vh"} w={"30vw"} src={craftParty} />
+            <Box></Box> */}
+          {/* <BackgroundImage
               radius={"lg"}
               h={"40vh"}
               w={"30vw"}
               src={smallGroup}
             >
-              <Box></Box>
-            </BackgroundImage>
-          </Flex>
+              {" "}
+            </BackgroundImage> */}
+
+          {/* <Image radius={"md"} h={"40vh"} w={"30vw"} src={smallGroup} />
+            <Box></Box> */}
         </Flex>
       </Flex>
     </>

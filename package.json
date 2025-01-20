@@ -11,6 +11,7 @@
     "discord-server": "nodemon --exec node --loader ts-node/esm src/server/server.ts"
   },
   "dependencies": {
+    "@mantine/carousel": "^7.11.2",
     "@mantine/core": "^7.11.2",
     "@mantine/dates": "^7.11.2",
     "@mantine/form": "^7.11.2",

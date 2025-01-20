@@ -13,24 +13,58 @@
 .featureSection {
   justify-content: center;
 
-  margin-top: 3rem;
+  margin-top: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 
   & .imageLeft {
-    margin-right: 5rem;
+    margin-right: 3rem;
   }
   & .imageRight {
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
   & .textBody {
-    margin-top: 2rem
+    margin-top: 1rem
   }
 }
 
 .testimonialContainer {
-  margin-top: 3rem;
+  margin-top: 6rem;
   margin-bottom: 3rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
+
+}
+.mantine-Carousel-control {
+  background-color: red
 }
 
 .tesmonialTitleContainer {
   margin-bottom: 3rem;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+
+
+  & .quoteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--mantine-color-white);
+    font-size: 20px;
+    padding: 20px;
+    max-width: 700px;
+    z-index: 1;
+  }
+  & .quoteBlack {
+    color: var(--mantine-color-black);
+    font-size:20px;
+    z-index: 1;
+  }
 }
