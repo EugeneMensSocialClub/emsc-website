@@ -1,8 +1,8 @@
 .heroTitleContainer {
-  color: #FFF0D1;
+  color: var(--mantine-color-white);
 
   & .titleText {
-    font-size: 70px
+    font-size: 7rem
   }
 }
 
@@ -61,6 +61,9 @@
     padding: 20px;
     max-width: 700px;
     z-index: 1;
+  }
+  & .quote {
+    font-style: italic;
   }
   & .quoteBlack {
     color: var(--mantine-color-black);

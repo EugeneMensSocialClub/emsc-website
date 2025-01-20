@@ -33,14 +33,15 @@ export function HomeRoute() {
           <Box maw={1920}>
             <Flex className="upperWelcome" direction={"column"}>
               <Center>
-                <Title size="h2">
+                <Title size="h1">
                   GROWING HEALTHY SOCIAL CONNECTIONS FOR MEN
                 </Title>
               </Center>
-              <Text>
-                With members in and around Eugene, Oregon, EMSC has helped
-                nearly 800 members find healthy and supportive social
-                connections in an age of digital isolation.
+              <Text maw={1080}>
+                In an age often defined by digital isolation, EMSC provides a
+                refreshing alternative—a welcoming space where members can build
+                genuine relationships, share experiences, and foster a true
+                sense of belonging within their community.
               </Text>
             </Flex>
           </Box>
@@ -136,7 +137,7 @@ export function HomeRoute() {
                 >
                   <div></div>
                   <div className="quoteContainer">
-                    <Text ta="center">
+                    <Text className="quote" ta="center">
                       "If it weren’t for the Eugene men’s social club, I
                       would’ve been alone waiting for my connecting flight."
                     </Text>
@@ -165,13 +166,12 @@ export function HomeRoute() {
                 >
                   <div></div>
                   <div className="quoteContainer">
-                    <Text ta="center">
-                      "Being a part of the Eugene Men's Social Club has brought
-                      me community and healing in a way I didn't know I needed
-                      in my life."
+                    <Text className="quote" ta="center">
+                      "With EMSC, I've been able to relive my childhood by
+                      playing with Legos with my friends."
                     </Text>
                     <Text>
-                      <b>TESANA B.</b>
+                      <b>TOM B.</b>
                     </Text>
                   </div>
                   <Overlay
@@ -194,7 +194,7 @@ export function HomeRoute() {
                 >
                   <div></div>
                   <div className="quoteContainer">
-                    <Text ta="center">
+                    <Text className="quote" ta="center">
                       "After living in Eugene for almost two years, this group
                       gave me a powerful method of making wonderful freinds in a
                       city where it had proven hard to meet people."
