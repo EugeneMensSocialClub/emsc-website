@@ -1,6 +1,7 @@
 .heroTitleContainer {
   color: var(--mantine-color-white);
-
+  padding: 0 !important;
+  width: 100vw;
   & .titleText {
     font-size: 7rem
   }
