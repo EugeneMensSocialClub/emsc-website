@@ -1,8 +1,7 @@
-import React from "react";
 import { Button, Title, Box } from "@mantine/core";
 import { theme } from "../config/mantineTheme";
 
-const JoinMensGroupCTA: React.FC = () => {
+export default function JoinMensGroupCTA() {
   return (
     <Box
       size="lg"
@@ -12,7 +11,7 @@ const JoinMensGroupCTA: React.FC = () => {
         textAlign: "center",
       }}
     >
-      <Title order={2} style={{ marginBottom: "1rem" }}>
+      <Title size={"h3"} order={2} style={{ marginBottom: "1rem" }}>
         Join the Men's Social Club
       </Title>
       <Button
@@ -25,6 +24,4 @@ const JoinMensGroupCTA: React.FC = () => {
       </Button>
     </Box>
   );
-};
-
-export default JoinMensGroupCTA;
+}

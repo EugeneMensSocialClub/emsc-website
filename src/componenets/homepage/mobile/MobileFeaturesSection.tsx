@@ -30,14 +30,14 @@ export default function MobileFeaturesSection() {
                   <Title size="h3">Welcome to the Club</Title>
                 </Center>
                 <Center>
-                  <Text className="textBody">
+                  <Text ta="center" className="textBody">
                     Eugene Men's Social Club (EMSC) is a vibrant community of
                     over 800 men fostering genuine friendships and connections
                     in the Eugene area.
                   </Text>
                 </Center>
                 <Center>
-                  <Text className="textBody">
+                  <Text ta="center" className="textBody">
                     From music to fitness, gaming to travel, we bring together
                     diverse interests while building lasting relationships and
                     mutual support. everyone.
@@ -67,13 +67,15 @@ export default function MobileFeaturesSection() {
             <Center>
               <Flex maw={682} direction="column">
                 <Center>
-                  <Title size="h3">We Meet Every Other Sunday</Title>
+                  <Title ta="center" size="h3">
+                    We Meet Every Other Sunday
+                  </Title>
                 </Center>
-                <Text className="textBody">
+                <Text ta="center" className="textBody">
                   Join us for "Beers with Buds" every other Sunday - a casual
                   gathering to connect over drinks and conversation.
                 </Text>
-                <Text className="textBody">
+                <Text ta="center" className="textBody">
                   Find our next meetup location and connect with members by
                   joining our Discord community.
                 </Text>

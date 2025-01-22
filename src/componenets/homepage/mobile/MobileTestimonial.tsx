@@ -16,6 +16,8 @@ export default function HomeTestimonial() {
           slideSize={"100%"}
           slideGap={"xl"}
           controlsOffset={"xl"}
+          withControls={false}
+          withIndicators
           maw={680}
           loop
         >
@@ -45,7 +47,7 @@ export default function HomeTestimonial() {
                 <Center>
                   <Image w={40} h={40} src={tom} />
                 </Center>
-                <Text className="quote" ta="center">
+                <Text className="quote" ta="center" maw={300}>
                   "With EMSC, I've been able to relive my childhood by playing
                   with Legos with my friends."
                 </Text>
@@ -65,11 +67,10 @@ export default function HomeTestimonial() {
                   <Image w={40} h={40} src={joshua} />
                 </Center>
                 <Text className="quote" ta="center">
-                  "After living in Eugene for almost two years, this group gave
-                  me a powerful method of making wonderful freinds in a city
-                  where it had proven hard to meet people."
+                  "This group gave me a powerful method of making wonderful
+                  friends in a city where it had proven hard to meet people."
                 </Text>
-                <Center>
+                <Center className="quoteAuthor">
                   <Text>
                     <b>JOSHUA G.</b>
                   </Text>

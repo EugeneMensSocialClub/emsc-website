@@ -79,6 +79,16 @@
   }
 }
 
+.mantine-Carousel-indicators button {
+  background-color: var(--mantine-color-black);
+  margin-top: 10px;
+}
+
+.mantine-Carousel-indicators {
+  position: absolute;
+  top: 165px;
+}
+
 @media (max-width: 768px) {
   .upperWelcome {
     margin-top: 3rem;
@@ -109,6 +119,9 @@
   & .quote {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  & .quoteAuthor {
+    padding-top: 10px;
   }
 }
 

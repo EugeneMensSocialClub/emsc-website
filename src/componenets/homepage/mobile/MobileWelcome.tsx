@@ -8,14 +8,12 @@ export default function Welcome() {
   return (
     <Box id="testing" maw={1920}>
       <Flex className="upperWelcome" direction={"column"} maw={1080}>
-        <Center>
-          <Title textWrap={"stable"} size={isMobile ? "h3" : "h1"}>
-            GROWING HEALTHY SOCIAL CONNECTIONS FOR MEN
-          </Title>
-        </Center>
+        <Title textWrap={"stable"} ta="center" size={isMobile ? "h3" : "h1"}>
+          GROWING HEALTHY SOCIAL CONNECTIONS FOR MEN
+        </Title>
         <Center>
           <Box maw={400}>
-            <Text>
+            <Text ta="center">
               In an age often defined by digital isolation, EMSC provides a
               refreshing alternative—a welcoming space where members can build
               genuine relationships, share experiences, and foster a true sense

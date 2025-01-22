@@ -1,18 +1,17 @@
 import { Flex, Box, Center, Title, Text } from "@mantine/core";
 import JoinMensGroupCTA from "../DiscordCTA";
-import useIsMobile from "../../hooks/useIsMobile";
 
 export default function Welcome() {
-  const isMobile = useIsMobile();
-
   return (
     <Box id="testing" maw={1920}>
       <Center>
         <Flex className="upperWelcome" direction={"column"} maw={1080}>
           <Center>
-            <Title textWrap={"stable"} size={isMobile ? "h3" : "h1"}>
-              GROWING HEALTHY SOCIAL CONNECTIONS FOR MEN
-            </Title>
+            <Box>
+              <Title textWrap={"stable"} size={"h1"}>
+                GROWING HEALTHY SOCIAL CONNECTIONS FOR MEN
+              </Title>
+            </Box>
           </Center>
           <Center>
             <Box maw={400}>
