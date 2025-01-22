@@ -1,4 +1,4 @@
-import logo from "../assets/images/emsc-logo.png";
+import logo from "../../assets/images/emsc-logo.png";
 import { Box, BackgroundImage, Center, Title } from "@mantine/core";
 
 export default function HomeHeroSection() {

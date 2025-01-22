@@ -1,4 +1,4 @@
-import logo from "../../assets/images/emsc-logo.png";
+import logo from "../../../assets/images/emsc-logo.png";
 import { Box, Center, Title, BackgroundImage, Flex } from "@mantine/core";
 
 export default function MobileHeroSection() {

@@ -1,9 +1,9 @@
 import { Carousel } from "@mantine/carousel";
 import { Flex, Center, Title, Text, Image } from "@mantine/core";
-import tom from "../../assets/images/Tom_B.png";
-import joshua from "../../assets/images/Joshua_G.png";
-import peter from "../../assets/images/Peter_M.png";
-import "../../assets/stylesheets/homepage.css";
+import tom from "../../../assets/images/Tom_B.png";
+import joshua from "../../../assets/images/Joshua_G.png";
+import peter from "../../../assets/images/Peter_M.png";
+import "../../../assets/stylesheets/homepage.css";
 
 export default function HomeTestimonial() {
   return (

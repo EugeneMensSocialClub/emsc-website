@@ -1,6 +1,6 @@
 import { Center, Flex, Image, Title, Text } from "@mantine/core";
-import threePeople from "../../assets/images/three-people-chill-drinks.png";
-import dropBear from "../../assets/images/drop-bear.png";
+import threePeople from "../../../assets/images/three-people-chill-drinks.png";
+import dropBear from "../../../assets/images/drop-bear.png";
 
 export default function MobileFeaturesSection() {
   return (

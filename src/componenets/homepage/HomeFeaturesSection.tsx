@@ -1,6 +1,6 @@
-import { Center, Flex, Image, Title, Text } from "@mantine/core";
-import threePeople from "../assets/images/three-people-chill-drinks.png";
-import dropBear from "../assets/images/drop-bear.png";
+import { Center, Flex, Image, Title, Text, Anchor } from "@mantine/core";
+import threePeople from "../../assets/images/three-people-chill-drinks.png";
+import dropBear from "../../assets/images/drop-bear.png";
 
 export default function HomeFeaturesSection() {
   return (
@@ -9,9 +9,10 @@ export default function HomeFeaturesSection() {
         <Center>
           <Flex
             className="featureSection"
-            gap={"xl"}
+            gap={"md"}
             id="test"
-            direction={{ base: "column-reverse", lg: "row" }}
+            maw={1920}
+            direction={{ base: "column-reverse", sm: "row" }}
           >
             <Image
               className="imageLeft"
@@ -36,22 +37,14 @@ export default function HomeFeaturesSection() {
                 fitness, tabletop gaming, or travel, there’s something here for
                 everyone.
               </Text>
-              <Text className="textBody">
-                But what truly sets EMSC apart isn’t just the activities we
-                enjoy—it’s the quality of our members. This is a group built on
-                support, connection, and genuine friendship. In an increasingly
-                online world, we’re creating something real: a community where
-                men lift each other up, discover common ground, and build
-                relationships that last a lifetime.
-              </Text>
             </Flex>
           </Flex>
         </Center>
         <Center>
           <Flex
             className="featureSection"
-            gap="xl"
-            direction={{ base: "column", lg: "row" }}
+            gap={"md"}
+            direction={{ base: "column", sm: "row" }}
           >
             <Flex direction="column">
               <Title size="h2">We Meet Every Other Sunday</Title>
@@ -64,8 +57,12 @@ export default function HomeFeaturesSection() {
                 friendly faces remain the same.
               </Text>
               <Text className="textBody">
-                Curious where we’re meeting next? Join our Discord community for
-                the latest updates, venue announcements, and to connect with
+                Curious where we’re meeting next?{" "}
+                <Anchor href="https://discord.gg/BdghJWUH" target="_blank">
+                  {" "}
+                  Join our Discord community{" "}
+                </Anchor>
+                for the latest updates, venue announcements, and to connect with
                 other members ahead of time. Whether you’re a craft beer
                 enthusiast or just looking for good company, "Beers with Buds"
                 is the place to be. Cheers to making Sundays something to look

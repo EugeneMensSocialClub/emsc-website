@@ -1,9 +1,9 @@
 import { Carousel } from "@mantine/carousel";
 import { Flex, Center, Title, Text, Paper, Overlay } from "@mantine/core";
-import layoverImage from "../assets/images/Layover.png";
-import craftParty from "../assets/images/CraftParty.png";
-import smallGroup from "../assets/images/SmallGroup.png";
-import "../assets/stylesheets/homepage.css";
+import layoverImage from "../../assets/images/Layover.png";
+import craftParty from "../../assets/images/CraftParty.png";
+import smallGroup from "../../assets/images/SmallGroup.png";
+import "../../assets/stylesheets/homepage.css";
 
 export default function HomeTestimonial() {
   return (
