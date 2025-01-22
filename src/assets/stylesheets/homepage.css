@@ -1,3 +1,7 @@
+.homepageContainer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .heroTitleContainer {
   color: var(--mantine-color-white);
   padding: 0 !important;
@@ -9,6 +13,8 @@
 
 .upperWelcome {
   margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .featureSection {
@@ -70,5 +76,51 @@
     color: var(--mantine-color-black);
     font-size:20px;
     z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .upperWelcome {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .featureSection {
+    justify-content: center;
+  
+    margin-top: 3rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  
+    & .imageLeft {
+      margin-right: 0rem;
+    }
+    & .imageRight {
+      margin-left: 0rem;
+    }
+    & .textBody {
+      margin-top: 0rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+.quoteContainer {
+  & .quote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
+  .testimonialContainer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .tesmonialTitleContainer {
+    margin-bottom: 0rem;
   }
 }

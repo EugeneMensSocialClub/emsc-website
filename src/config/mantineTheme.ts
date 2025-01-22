@@ -23,6 +23,7 @@ import '../assets/stylesheets/prozaLibre.css'
     sizes: {
       h1: { fontSize: rem(51.2) },
       h2: { fontSize: rem(39.4) },
+      h3: { fontSize: rem(30.3) },
     },
   },
 });
