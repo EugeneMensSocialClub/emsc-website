@@ -70,7 +70,7 @@ export default function HomeTestimonial() {
                   "This group gave me a powerful method of making wonderful
                   friends in a city where it had proven hard to meet people."
                 </Text>
-                <Center className="quoteAuthor">
+                <Center>
                   <Text>
                     <b>JOSHUA G.</b>
                   </Text>
