@@ -152,7 +152,6 @@ export function HomeRoute() {
                     zIndex={0}
                   />
                 </Paper>
-                {/* <Image src={layoverImage} /> */}
               </Carousel.Slide>
               <Carousel.Slide>
                 <Paper
@@ -180,7 +179,6 @@ export function HomeRoute() {
                     zIndex={0}
                   />
                 </Paper>
-                {/* <Image src={craftParty} /> */}
               </Carousel.Slide>
               <Carousel.Slide>
                 <Paper
@@ -209,45 +207,9 @@ export function HomeRoute() {
                     zIndex={0}
                   />
                 </Paper>
-                {/* <Image src={smallGroup} /> */}
               </Carousel.Slide>
             </Carousel>
           </Center>
-
-          {/* <BackgroundImage
-              radius={"md"}
-              h={"40vh"}
-              w={"30vw"}
-              src={layoverImage}
-            >
-              {" "}
-            </BackgroundImage> */}
-          {/* <Image radius={"md"} h={"40vh"} w={"30vw"} src={layoverImage} />
-            <Box>
-              <Text></Text>
-            </Box> */}
-          {/* <BackgroundImage
-              radius={"lg"}
-              h={"40vh"}
-              w={"30vw"}
-              src={craftParty}
-            >
-              {" "}
-            </BackgroundImage> */}
-
-          {/* <Image radius={"md"} h={"40vh"} w={"30vw"} src={craftParty} />
-            <Box></Box> */}
-          {/* <BackgroundImage
-              radius={"lg"}
-              h={"40vh"}
-              w={"30vw"}
-              src={smallGroup}
-            >
-              {" "}
-            </BackgroundImage> */}
-
-          {/* <Image radius={"md"} h={"40vh"} w={"30vw"} src={smallGroup} />
-            <Box></Box> */}
         </Flex>
       </Flex>
     </>
