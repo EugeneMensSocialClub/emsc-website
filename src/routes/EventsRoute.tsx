@@ -26,6 +26,7 @@ export function EventsRoute() {
     };
     getEvents();
   }, []);
+
   return (
     <div>
       <h1>Scheduled Events</h1>

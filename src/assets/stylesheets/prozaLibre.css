@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'ProzaLibre-Bold';
+  src: url(../fonts/ProzaLibre-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-BoldItalic';
+  src: url(../fonts/ProzaLibre-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-ExtraBold';
+  src: url(../fonts/ProzaLibre-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-ExtraBoldItalic';
+  src: url(../fonts/ProzaLibre-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-Italic';
+  src: url(../fonts/ProzaLibre-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-Medium';
+  src: url(../fonts/ProzaLibre-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-MediumItalic';
+  src: url(../fonts/ProzaLibre-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-Regular';
+  src: url(../fonts/ProzaLibre-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-SemiBold';
+  src: url(../fonts/ProzaLibre-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'ProzaLibre-SemiBoldItalic';
+  src: url(../fonts/ProzaLibre-SemiBoldItalic.ttf);
+}
