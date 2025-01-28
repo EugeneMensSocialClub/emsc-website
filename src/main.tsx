@@ -6,11 +6,13 @@ import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import { theme } from "./config/mantineTheme.ts";
 import "@mantine/carousel/styles.css";
+import AppFooter from "./componenets/Footer.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <MantineProvider theme={theme}>
       <Router />
+      <AppFooter />
     </MantineProvider>
   </React.StrictMode>
 );
