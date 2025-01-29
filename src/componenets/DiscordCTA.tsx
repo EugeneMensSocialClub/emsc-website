@@ -16,7 +16,7 @@ export default function JoinMensGroupCTA() {
       </Title>
       <Button
         component="a"
-        href="https://discord.gg/BdghJWUH"
+        href="https://discord.gg/YN2HPAsQcP"
         size="lg"
         color={theme.colors.green[6]}
       >
