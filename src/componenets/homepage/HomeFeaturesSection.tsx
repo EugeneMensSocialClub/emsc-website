@@ -25,7 +25,7 @@ export default function HomeFeaturesSection() {
               <Title size="h2">Welcome to the Club</Title>
               <Text className="textBody">
                 What began as a small gathering in October 2022 has blossomed
-                into Eugene Men's Social Club (EMSC)—a vibrant, diverse and
+                into Eugene Men's Social Club (EMSC)—a vibrant, diverse, and
                 inclusive community where countless members have discovered some
                 of their closest friendships since moving to the Eugene area.
               </Text>
@@ -58,9 +58,9 @@ export default function HomeFeaturesSection() {
               </Text>
               <Text className="textBody">
                 Curious where we’re meeting next?{" "}
-                <Anchor href="https://discord.gg/BdghJWUH" target="_blank">
+                <Anchor href="https://discord.gg/YN2HPAsQcP" target="_blank">
                   {" "}
-                  Join our Discord community{" "}
+                  Join our Discord{" "}
                 </Anchor>
                 for the latest updates, venue announcements, and to connect with
                 other members ahead of time. Whether you’re a craft beer

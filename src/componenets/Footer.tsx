@@ -13,7 +13,7 @@ const AppFooter: React.FC = () => {
       >
         <div></div>
         <Group gap="xs">
-          <Anchor href="https://discord.gg/BdghJWUH" target="_blank">
+          <Anchor href="https://discord.gg/YN2HPAsQcP" target="_blank">
             Discord Server
           </Anchor>
           <Anchor href="https://twitter.com" target="_blank"></Anchor>

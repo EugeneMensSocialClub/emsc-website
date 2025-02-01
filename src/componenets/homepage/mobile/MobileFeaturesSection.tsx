@@ -1,4 +1,4 @@
-import { Center, Flex, Image, Title, Text } from "@mantine/core";
+import { Center, Flex, Image, Title, Text, Anchor } from "@mantine/core";
 import threePeople from "../../../assets/images/three-people-chill-drinks.png";
 import dropBear from "../../../assets/images/drop-bear.png";
 
@@ -77,7 +77,10 @@ export default function MobileFeaturesSection() {
                 </Text>
                 <Text ta="center" className="textBody">
                   Find our next meetup location and connect with members by
-                  joining our Discord community.
+                  <Anchor href="https://discord.gg/YN2HPAsQcP" target="_blank">
+                    {" "}
+                    joining our Discord community.
+                  </Anchor>
                 </Text>
               </Flex>
             </Center>

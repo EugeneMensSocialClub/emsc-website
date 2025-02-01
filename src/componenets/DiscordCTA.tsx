@@ -18,6 +18,7 @@ export default function JoinMensGroupCTA() {
         component="a"
         href="https://discord.gg/YN2HPAsQcP"
         size="lg"
+        target="_blank"
         color={theme.colors.green[6]}
       >
         Sign Up Now

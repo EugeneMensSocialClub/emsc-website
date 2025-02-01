@@ -1,32 +1,75 @@
-# React + TypeScript + Vite
+# EMSC-WEBSITE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Welcome to the **Project Name**! This project is a [brief description of what the project does, its purpose, and its main features].
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Table of Contents
 
-## Expanding the ESLint configuration
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json", "./tsconfig.app.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-## Run the app
+To get a local copy up and running, follow these steps.
 
 1. Run `npm install`
-2. `npm run dev` for the web app
-3. `npm run discord-server` for the bot (only used to fetch events right now)
+
+## Usage
+
+`npm run dev` for the web app
+`npm run discord-server` for the bot (only used to fetch events right now)
+
+To start the development server, run:
+
+```bash
+npm run dev
+npm run discord-server
+```
+
+Open your browser and navigate to `http://localhost:5173` to see the application in action.
+
+## Folder Structure
+
+Here's a brief overview of the folder structure:
+
+```
+emsc-website/
+├── src/                  # Source files
+|   |── assets            # Images and styles
+│   ├── components/       # React components
+│   ├── config/           # Website configuration
+│   ├── hooks/            # Reusable logic
+│   ├── routes/           # Page code for React Hooks
+│   ├── server/           # Server and discord bot
+│   ├── services/         # API services
+│   └── utils/            # Utility functions
+├── public/               # Public assets
+├── .env                  # Environment variables
+├── package.json          # Project metadata and dependencies
+└── README.md             # Project documentation
+```
+
+## Contributing
+
+We welcome contributions! To contribute to this project, please follow these steps:
+
+1. Request contributor access from Joshua G in the discord group.
+2. Clone the repository
+3. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+4. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. Create a pull request.
+
+---
