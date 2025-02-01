@@ -1,5 +1,7 @@
 # EMSC-WEBSITE
 
+<img alt="profile image" src="./src/assets/images/emsc-logo.png" width="600" height="300">
+
 ## Overview
 
 Welcome to the **Project Name**! This project is a [brief description of what the project does, its purpose, and its main features].
