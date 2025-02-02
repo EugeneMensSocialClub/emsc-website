@@ -34,7 +34,7 @@ export default function HomeFeaturesSection() {
                 of their closest friendships since moving to the Eugene area.
               </Text>
               <Text className="textBody">
-                Today, EMSC proudly boasts a membership of over 800 men and
+                Today, EMSC proudly boasts a membership of over 800 members and
                 continues to grow steadily. Our group brings together people
                 from all walks of life, united by shared interests and a spirit
                 of camaraderie. Whether you're into music, mycology, fashion,

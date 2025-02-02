@@ -36,8 +36,8 @@ export default function MobileFeaturesSection() {
                 <Center>
                   <Text ta="center" className="textBody">
                     Eugene Men's Social Club (EMSC) is a vibrant community of
-                    over 800 men fostering genuine friendships and connections
-                    in the Eugene area.
+                    over 800 members fostering genuine friendships and
+                    connections in the Eugene area.
                   </Text>
                 </Center>
                 <Center>
