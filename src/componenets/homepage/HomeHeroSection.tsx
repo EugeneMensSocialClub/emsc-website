@@ -6,7 +6,9 @@ export default function HomeHeroSection() {
     <Box className="heroTitleContainer">
       <BackgroundImage style={{ padding: 0 }} src={logo}>
         <Center mih={"75vh"}>
-          <Title className="titleText">Eugene Men's Social Club</Title>
+          <Title className="titleText" order={1}>
+            Eugene Men's Social Club
+          </Title>
         </Center>
       </BackgroundImage>
     </Box>

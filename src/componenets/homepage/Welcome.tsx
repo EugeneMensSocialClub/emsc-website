@@ -8,7 +8,7 @@ export default function Welcome() {
         <Flex className="upperWelcome" direction={"column"} maw={1080}>
           <Center>
             <Box>
-              <Title textWrap={"stable"} size={"h1"}>
+              <Title textWrap={"stable"} size={"h1"} order={2}>
                 GROWING HEALTHY SOCIAL CONNECTIONS FOR MEN
               </Title>
             </Box>

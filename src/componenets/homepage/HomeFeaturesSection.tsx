@@ -1,6 +1,8 @@
 import { Center, Flex, Image, Title, Text, Anchor } from "@mantine/core";
 import threePeople from "../../assets/images/three-people-chill-drinks.png";
 import dropBear from "../../assets/images/drop-bear.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomeFeaturesSection() {
   return (
@@ -22,7 +24,9 @@ export default function HomeFeaturesSection() {
               w={"50vw"}
             />
             <Flex direction="column">
-              <Title size="h2">Welcome to the Club</Title>
+              <Title size="h2" order={2}>
+                Welcome to the Club
+              </Title>
               <Text className="textBody">
                 What began as a small gathering in October 2022 has blossomed
                 into Eugene Men's Social Club (EMSC)—a vibrant, diverse, and
@@ -47,7 +51,9 @@ export default function HomeFeaturesSection() {
             direction={{ base: "column", sm: "row" }}
           >
             <Flex direction="column">
-              <Title size="h2">We Meet Every Other Sunday</Title>
+              <Title size="h2" order={2}>
+                We Meet Every Other Sunday
+              </Title>
               <Text className="textBody">
                 Rain or shine, you'll always find us hosting an event we
                 lovingly call "Beers with Buds" every other Sunday. It’s the
@@ -58,9 +64,17 @@ export default function HomeFeaturesSection() {
               </Text>
               <Text className="textBody">
                 Curious where we’re meeting next?{" "}
-                <Anchor href="https://discord.gg/YN2HPAsQcP" target="_blank">
+                <Anchor
+                  href="https://discord.gg/YN2HPAsQcP"
+                  target="_blank"
+                  aria-label={"Discord invite"}
+                >
                   {" "}
                   Join our Discord{" "}
+                  <FontAwesomeIcon
+                    icon={faUpRightFromSquare}
+                    aria-label={"new tab icon"}
+                  />{" "}
                 </Anchor>
                 for the latest updates, venue announcements, and to connect with
                 other members ahead of time. Whether you’re a craft beer

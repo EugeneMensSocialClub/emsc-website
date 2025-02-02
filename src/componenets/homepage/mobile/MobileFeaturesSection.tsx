@@ -1,6 +1,8 @@
 import { Center, Flex, Image, Title, Text, Anchor } from "@mantine/core";
 import threePeople from "../../../assets/images/three-people-chill-drinks.png";
 import dropBear from "../../../assets/images/drop-bear.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function MobileFeaturesSection() {
   return (
@@ -27,7 +29,9 @@ export default function MobileFeaturesSection() {
             <Center>
               <Flex maw={682} direction="column">
                 <Center>
-                  <Title size="h3">Welcome to the Club</Title>
+                  <Title size={"h3"} order={2}>
+                    Welcome to the Club
+                  </Title>
                 </Center>
                 <Center>
                   <Text ta="center" className="textBody">
@@ -67,7 +71,7 @@ export default function MobileFeaturesSection() {
             <Center>
               <Flex maw={682} direction="column">
                 <Center>
-                  <Title ta="center" size="h3">
+                  <Title ta="center" size="h3" order={2}>
                     We Meet Every Other Sunday
                   </Title>
                 </Center>
@@ -77,9 +81,17 @@ export default function MobileFeaturesSection() {
                 </Text>
                 <Text ta="center" className="textBody">
                   Find our next meetup location and connect with members by
-                  <Anchor href="https://discord.gg/YN2HPAsQcP" target="_blank">
+                  <Anchor
+                    href="https://discord.gg/YN2HPAsQcP"
+                    target="_blank"
+                    aria-label={"Discord invite"}
+                  >
                     {" "}
-                    joining our Discord community.
+                    joining our Discord community.{" "}
+                    <FontAwesomeIcon
+                      icon={faUpRightFromSquare}
+                      aria-label={"new tab icon"}
+                    />
                   </Anchor>
                 </Text>
               </Flex>

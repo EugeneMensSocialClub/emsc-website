@@ -9,7 +9,10 @@ export default function HomeTestimonial() {
   return (
     <Flex className="testimonialContainer" direction="column">
       <Center className="tesmonialTitleContainer">
-        <Title size="h1"> Stories from our Members</Title>
+        <Title size="h1" order={2}>
+          {" "}
+          Stories from our Members
+        </Title>
       </Center>
       <Center>
         <Carousel
@@ -26,6 +29,7 @@ export default function HomeTestimonial() {
               radius="md"
               h={500}
               style={{ backgroundImage: `url(${layoverImage})` }}
+              aria-describedby="Two friends meet at the airport in serendipity."
               className="card"
               id="card"
             >
@@ -41,7 +45,7 @@ export default function HomeTestimonial() {
               </div>
 
               <Overlay
-                gradient="linear-gradient(360deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 50%)"
+                gradient="linear-gradient(360deg, rgba(0, 0, 0, .95) 25%, rgba(0, 0, 0, 0) 50%)"
                 opacity={0.85}
                 zIndex={0}
               />
@@ -55,6 +59,7 @@ export default function HomeTestimonial() {
               h={500}
               style={{ backgroundImage: `url(${craftParty})` }}
               className="card"
+              aria-describedby="a large group of friends building legos."
               id="card"
             >
               <div></div>
@@ -68,7 +73,7 @@ export default function HomeTestimonial() {
                 </Text>
               </div>
               <Overlay
-                gradient="linear-gradient(360deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 50%)"
+                gradient="linear-gradient(360deg, rgba(0, 0, 0, .95) 25%, rgba(0, 0, 0, 0) 50%)"
                 opacity={0.85}
                 zIndex={0}
               />
@@ -82,6 +87,7 @@ export default function HomeTestimonial() {
               h={500}
               style={{ backgroundImage: `url(${smallGroup})` }}
               className="card"
+              aria-describedby="a small group of friends enjoying a gathering."
               id="card"
             >
               <div></div>
@@ -96,7 +102,7 @@ export default function HomeTestimonial() {
                 </Text>
               </div>
               <Overlay
-                gradient="linear-gradient(360deg, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, 0) 50%)"
+                gradient="linear-gradient(360deg, rgba(0, 0, 0, .95) 25%, rgba(0, 0, 0, 0) 50%)"
                 opacity={0.85}
                 zIndex={0}
               />
