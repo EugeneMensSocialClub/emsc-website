@@ -11,7 +11,7 @@ export default function JoinMensGroupCTA() {
         textAlign: "center",
       }}
     >
-      <Title size={"h3"} order={2} style={{ marginBottom: "1rem" }}>
+      <Title size={"h3"} order={3} style={{ marginBottom: "1rem" }}>
         Join the Men's Social Club
       </Title>
       <Button
@@ -19,6 +19,7 @@ export default function JoinMensGroupCTA() {
         href="https://discord.gg/YN2HPAsQcP"
         size="lg"
         target="_blank"
+        aria-label={"Discord invite new tab"}
         color={theme.colors.green[6]}
       >
         Sign Up Now

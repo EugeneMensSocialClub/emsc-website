@@ -13,11 +13,14 @@ const AppFooter: React.FC = () => {
       >
         <div></div>
         <Group gap="xs">
-          <Anchor href="https://discord.gg/YN2HPAsQcP" target="_blank">
+          <Anchor
+            href="https://discord.gg/YN2HPAsQcP"
+            target="_blank"
+            aria-label="Discord invite new tab"
+            style={{ color: "var(--mantine-color-white)" }}
+          >
             Discord Server
           </Anchor>
-          <Anchor href="https://twitter.com" target="_blank"></Anchor>
-          <Anchor href="https://instagram.com" target="_blank"></Anchor>
         </Group>
       </Box>
     </Box>

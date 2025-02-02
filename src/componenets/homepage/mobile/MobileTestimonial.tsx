@@ -9,7 +9,10 @@ export default function HomeTestimonial() {
   return (
     <Flex className="testimonialContainer" direction="column">
       <Center className="tesmonialTitleContainer">
-        <Title size="h3"> Stories from our Members</Title>
+        <Title size="h3" order={2}>
+          {" "}
+          Stories from our Members
+        </Title>
       </Center>
       <Center>
         <Carousel
