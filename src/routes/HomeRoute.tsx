@@ -7,20 +7,19 @@ import HomeHeroSection from "../componenets/homepage/HomeHeroSection";
 import MobileHeroSection from "../componenets/homepage/mobile/MobileHeroSection";
 import "../assets/stylesheets/homepage.css";
 import useIsMobile from "../hooks/useIsMobile";
-import MobileWelcome from "../componenets/homepage/mobile/MobileWelcome";
-import Welcome from "../componenets/homepage/Welcome";
+import Navigation from "../componenets/Navigation";
 
 export function HomeRoute() {
   const isMobile = useIsMobile();
 
   return (
     <Flex direction={"column"}>
+      <Navigation />
       {isMobile ? <MobileHeroSection /> : <HomeHeroSection />}
       <Center id="test-center" w={"100%"}>
         <Box maw={1920} miw={320}>
           <Center>
             <Flex direction={"column"}>
-              {isMobile ? <MobileWelcome /> : <Welcome />}
               <Center>
                 {isMobile ? <MobileFeaturesSection /> : <HomeFeaturesSection />}
               </Center>
