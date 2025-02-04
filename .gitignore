@@ -6,3 +6,4 @@ firebase.json
 dist
 .firebase
 dataconnect
+src/server/config/serviceAccount.json

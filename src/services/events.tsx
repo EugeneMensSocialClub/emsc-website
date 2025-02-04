@@ -1,4 +1,4 @@
-import { API_ROUTES } from "../config/api";
+import { API_ROUTES } from "../client/config/api";
 
 export const fetchScheduledEvents = async () => {
   const response = await fetch(
