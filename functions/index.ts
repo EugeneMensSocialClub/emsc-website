@@ -12,7 +12,6 @@ import { routes } from "./routes/index.js";
 import { corsMiddleware } from "./middleware/cors.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { discordService } from "./services/discordService.js";
-import { functions }  from "firebase-functions";
 
 const app = express();
 const PORT = 8080;

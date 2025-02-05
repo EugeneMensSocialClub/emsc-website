@@ -7,3 +7,8 @@ dist
 .firebase
 dataconnect
 src/server/config/serviceAccount.json
+functions/config/serviceAccount.json
+functions/lib
+functions/typings
+functions/node_modules
+functions/*.local
