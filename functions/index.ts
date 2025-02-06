@@ -6,11 +6,18 @@
  *
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
-
+import 'dotenv/config'
 import {onRequest} from "firebase-functions/v2/https";
-import * as logger from "firebase-functions/logger";
-import * as functions from 'firebase-functions';
+import logger from "firebase-functions/logger";
 import { discordService } from './services/discordService.js';
+import express from "express"
+
+const app = express()
+app.listen(() => {
+  console.log('Listenging on port')
+})
+
+
 
 // Start writing functions
 // https://firebase.google.com/docs/functions/typescript
@@ -20,9 +27,10 @@ export const helloWorld = onRequest((request, response) => {
   response.send("Hello from Firebase!");
 });
 
-const discord = discordService;
 
-export const getScheduledEvents = functions.https.onRequest(async (request, response) => {
+export const getScheduledEvents = onRequest(async (request, response) => {
+  const discord = discordService;
+
   try {
     // Fetch scheduled events from the Discord service
     const events = await discord.getScheduledEvents();
