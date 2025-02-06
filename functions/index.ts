@@ -1,33 +1,35 @@
-import { config } from 'dotenv';
-import { dirname, resolve } from 'path';
-import { fileURLToPath } from 'url';
+/**
+ * Import function triggers from their respective submodules:
+ *
+ * import {onCall} from "firebase-functions/v2/https";
+ * import {onDocumentWritten} from "firebase-functions/v2/firestore";
+ *
+ * See a full list of supported triggers at https://firebase.google.com/docs/functions
+ */
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import {onRequest} from "firebase-functions/v2/https";
+import * as logger from "firebase-functions/logger";
+import * as functions from 'firebase-functions';
+import { discordService } from './services/discordService.js';
 
-config({ path: resolve(__dirname, ".env") });
+// Start writing functions
+// https://firebase.google.com/docs/functions/typescript
 
-import express from "express";
-import { routes } from "./routes/index.js";
-import { corsMiddleware } from "./middleware/cors.js";
-import { errorHandler } from "./middleware/errorHandler.js";
-import { discordService } from "./services/discordService.js";
-
-const app = express();
-const PORT = 8080;
-
-discordService.init().then(() => {
-  app.use(corsMiddleware);
-  app.use('/api', routes);
-
-  app.use(errorHandler);
-
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-}).catch((error: any) => {
-  console.error("Error initializing Discord service:", error);
-  process.exit(1);
+export const helloWorld = onRequest((request, response) => {
+  logger.info("Hello logs!", {structuredData: true});
+  response.send("Hello from Firebase!");
 });
 
-export { app };
+const discord = discordService;
+
+export const getScheduledEvents = functions.https.onRequest(async (request, response) => {
+  try {
+    // Fetch scheduled events from the Discord service
+    const events = await discord.getScheduledEvents();
+    // Send the events as a JSON response
+    response.json(events);
+  } catch (error) {
+    console.error("Error fetching scheduled events:", error);
+    response.status(500).json({ error: "Internal server error" });
+  }
+});

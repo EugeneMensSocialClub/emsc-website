@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchScheduledEvents } from "../../services/events";
+import { fetchScheduledEvents } from "../services/events";
 
 type Event = {
   id: string;
