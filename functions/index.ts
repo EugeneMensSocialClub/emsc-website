@@ -10,12 +10,7 @@ import 'dotenv/config'
 import {onRequest} from "firebase-functions/v2/https";
 import logger from "firebase-functions/logger";
 import { discordService } from './services/discordService.js';
-import express from "express"
 
-const app = express()
-app.listen(() => {
-  console.log('Listenging on port')
-})
 
 
 
