@@ -11,28 +11,27 @@ import {onRequest} from "firebase-functions/v2/https";
 import logger from "firebase-functions/logger";
 import { discordService } from './services/discordService.js';
 
-
+const discord = discordService;
 
 
 // Start writing functions
 // https://firebase.google.com/docs/functions/typescript
 
-export const helloWorld = onRequest((request, response) => {
+export const helloWorld = onRequest((req, res) => {
   logger.info("Hello logs!", {structuredData: true});
-  response.send("Hello from Firebase!");
+  res.send("Hello from Firebase!");
 });
 
 
-export const getScheduledEvents = onRequest(async (request, response) => {
-  const discord = discordService;
-
-  try {
-    // Fetch scheduled events from the Discord service
-    const events = await discord.getScheduledEvents();
-    // Send the events as a JSON response
-    response.json(events);
-  } catch (error) {
-    console.error("Error fetching scheduled events:", error);
-    response.status(500).json({ error: "Internal server error" });
-  }
+export const getScheduledEvents = onRequest(async (req, res) => {
+  {cors: true}
+    try {
+      // Fetch scheduled events from the Discord service
+      const events = await discord.getScheduledEvents();
+      // Send the events as a JSON response
+      res.status(200).json(events);
+    } catch (error) {
+      console.error("Error fetching scheduled events:", error);
+      res.status(500).json({ error: "Internal server error" });
+    }
 });

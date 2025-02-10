@@ -26,7 +26,7 @@ export function EventsRoute() {
     };
     getEvents();
   }, []);
-
+  console.log(`${process.env.VITE_API_URL}`);
   return (
     <div>
       <h1>Scheduled Events</h1>
