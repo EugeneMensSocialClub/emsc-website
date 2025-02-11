@@ -17,7 +17,5 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ],
-  "include": ["index.ts"],
-  "exclude": ["node_modules/", "dist/"]
+  ]
 }
