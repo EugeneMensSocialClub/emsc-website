@@ -52,7 +52,6 @@ class DiscordService {
 
     } catch (error) {
       // Convert unknown errors
-      return error
       throw new AppError(500, 'Failed to fetch events');
     }
   }

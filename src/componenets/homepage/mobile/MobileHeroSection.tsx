@@ -6,23 +6,23 @@ export default function MobileHeroSection() {
     <Box className="heroTitleContainer">
       <BackgroundImage style={{ padding: 0 }} src={logo}>
         <Flex direction={"column"}>
-          <Center>
-            <Title className="titleText" order={1}>
+          <Center mt={40}>
+            <Title className="titleText" lh={0.9} order={1}>
               Eugene
             </Title>
           </Center>
           <Center>
-            <Title className="titleText" order={1}>
+            <Title className="titleText" lh={0.9} order={1}>
               Men's
             </Title>
           </Center>
           <Center>
-            <Title className="titleText" order={1}>
+            <Title className="titleText" lh={0.9} order={1}>
               Social
             </Title>
           </Center>
           <Center>
-            <Title className="titleText" order={1}>
+            <Title className="titleText" lh={0.9} order={1}>
               Club
             </Title>
           </Center>

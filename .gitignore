@@ -6,7 +6,6 @@ firebase.json
 dist
 .firebase
 dataconnect
-src/server/config/serviceAccount.json
 functions/config/serviceAccount.json
 functions/config/firebase-config.js
 functions/lib
