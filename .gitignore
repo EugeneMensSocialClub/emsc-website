@@ -1,8 +1,14 @@
 node_modules
 .env
-
+firebase-debug.log
 .firebaserc
 firebase.json
 dist
 .firebase
 dataconnect
+functions/config/serviceAccount.json
+functions/config/firebase-config.js
+functions/lib
+functions/typings
+functions/node_modules
+functions/*.local
