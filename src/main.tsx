@@ -10,7 +10,7 @@ import AppFooter from "./componenets/Footer.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={theme} defaultColorScheme="dark">
       <Router />
       <AppFooter />
     </MantineProvider>
