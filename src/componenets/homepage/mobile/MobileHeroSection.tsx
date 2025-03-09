@@ -6,7 +6,7 @@ export default function MobileHeroSection() {
     <Box className="heroTitleContainer">
       <BackgroundImage style={{ padding: 0 }} src={logo}>
         <Flex direction={"column"}>
-          <Center mt={40}>
+          <Center mt={75}>
             <Title className="titleText" lh={0.9} order={1}>
               Eugene
             </Title>
