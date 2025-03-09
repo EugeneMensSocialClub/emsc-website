@@ -31,7 +31,6 @@ export const getScheduledEvents = onRequest(async (req, res) => {
       // Send the events as a JSON response
       res.status(200).json(events);
     } catch (error) {
-      console.error("Error fetching scheduled events:", error);
       res.status(500).json({ error: "Internal server error" });
     }
 });

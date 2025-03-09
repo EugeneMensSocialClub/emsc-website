@@ -21,14 +21,12 @@ To get a local copy up and running, follow these steps.
 
 ## Usage
 
-`npm run dev` for the web app
-`npm run discord-server` for the bot (only used to fetch events right now)
+`firebase emulators:start` to run the website and Functions.
 
 To start the development server, run:
 
 ```bash
 npm run dev
-npm run discord-server
 ```
 
 Open your browser and navigate to `http://localhost:5173` to see the application in action.
@@ -39,15 +37,16 @@ Here's a brief overview of the folder structure:
 
 ```
 emsc-website/
+├── functions/
+|   |── controllers       # Requests for data
+│   ├── errors/           # Centralized error handling utilities
 ├── src/                  # Source files
 |   |── assets            # Images and styles
 │   ├── components/       # React components
 │   ├── config/           # Website configuration
 │   ├── hooks/            # Reusable logic
 │   ├── routes/           # Page code for React Hooks
-│   ├── server/           # Server and discord bot
 │   ├── services/         # API services
-│   └── utils/            # Utility functions
 ├── public/               # Public assets
 ├── .env                  # Environment variables
 ├── package.json          # Project metadata and dependencies

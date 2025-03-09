@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from "express";
+import { HttpsError } from "firebase-functions/v2/https";
 
 export class AppError extends Error {
   constructor(
@@ -11,20 +11,13 @@ export class AppError extends Error {
   }
 }
 
-export const errorHandler = (
-  err: Error | AppError,
-  _req: Request,
-  res: Response,
-  _next: NextFunction
-) => {
+export const errorHandler = (err: Error | AppError) => {
   const statusCode = err instanceof AppError ? err.statusCode : 500;
-
   const isDevelopment = process.env.NODE_ENV === "development";
 
-  res.status(statusCode).json({
-    status: "error",
-    message: err.message,
-    ...(isDevelopment && { stack: err.stack }),
-    ...(isDevelopment && { detail: err }),
-  });
+  throw new HttpsError(
+    statusCode === 500 ? "internal" : "invalid-argument",
+    err.message,
+    isDevelopment ? { stack: err.stack, detail: err } : undefined
+  );
 };

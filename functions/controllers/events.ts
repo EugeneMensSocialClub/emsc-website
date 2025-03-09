@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { discordService } from "../services/discordService.js";
-import { AppError } from "../middleware/errorHandler.js";
+import { AppError } from "../errors/errorHandler.js";
 
 export const getScheduledEvents = async (
   _req: Request,
