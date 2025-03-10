@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "CommonJS",
     "esModuleInterop": true,
-    "moduleResolution": "nodenext",
+    "moduleResolution": "node",
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "outDir": "lib",
     "sourceMap": true,
     "strict": true,
-    "target": "es2020",
+    "target": "es2020"
   },
   "compileOnSave": true,
-  "include": ["index.ts"],
+  "include": ["index.ts"]
 }

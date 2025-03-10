@@ -1,14 +1,10 @@
-import { Request, Response } from "express";
-import { discordService } from "../services/discordService.js";
-import { AppError } from "../errors/errorHandler.js";
+import * as functions from "firebase-functions";
+import { discordService } from "../services/discordService";
+import { AppError } from "../errors/errorHandler";
 
-export const getScheduledEvents = async (
-  _req: Request,
-  res: Response,
-) => {
+export const getScheduledEvents = functions.https.onRequest(async (req, res) => {
   try {
-    const guildId =
-     String(process.env.DISCORD_GUILD_ID);
+    const guildId = String(process.env.DISCORD_GUILD_ID);
     if (!guildId) {
       throw new AppError(500, "Guild ID is not configured");
     }
@@ -16,7 +12,6 @@ export const getScheduledEvents = async (
     const events = await discordService.getScheduledEvents();
     res.json(events);
   } catch (error) {
-    console.error("Error fetching scheduled events:", error);
     res.status(500).json({ error: "Internal server error" });
   }
-};
+});
