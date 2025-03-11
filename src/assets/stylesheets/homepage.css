@@ -8,11 +8,14 @@
   position: relative;
   overflow: hidden;
   padding: 0 !important;
-  height: 75vh;
+  height: 50vh;
   width: 100vw;
   & .titleText {
-    font-size: 7vw;
+    font-size: clamp(16px, 7vw, 143px);
     line-height: 65%;
+  }
+  & .textBody {
+    font-size: clamp(16px, 1vw, 24px);
   }
 }
 
@@ -37,7 +40,7 @@
   background-size: contain;
   background-position: left top;
   background-repeat: repeat-x;
-  -webkit-mask-image: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 90%);
+  mask-image: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 90%);
 }
 
 .upperWelcome {

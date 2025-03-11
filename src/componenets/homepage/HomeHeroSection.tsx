@@ -10,9 +10,9 @@ export default function HomeHeroSection() {
     >
       <Box className="heroBackgound" />
 
-      <Center mih={"75vh"}>
+      <Center mih={"50vh"}>
         <Image src={homeLogo} w={254} />
-        <Box className="titleContainer" ml={"5vw"}>
+        <Box className="titleContainer" ml={46}>
           <Box>
             <Title className="titleText" order={1}>
               A SPACE
