@@ -20,9 +20,9 @@ import '../assets/stylesheets/prozaLibre.css'
   colors: {
     green: [
       '#1B3624',
-      '#22452D',  // * Brand
+      '#22452D',  // * Brand [1]
       '#274F33',
-      '#2D5D3C',  // * Brand
+      '#2D5D3C',  // * Brand [3]
       '#336B44',
       '#39794C',
       '#408754',

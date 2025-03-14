@@ -47,10 +47,6 @@
 .featureSection {
   justify-content: center;
 
-
-  & .imageRight {
-    min-width: 768px;
-  }
   & .textBody {
     max-width: 568px;
     margin-top: 24px;
@@ -64,7 +60,8 @@
     padding: 15px;
   }
   & .textContainer{
-    margin-top: 3rem
+    margin-top: 3rem;
+    margin-right: 1rem;
   }
 }
 

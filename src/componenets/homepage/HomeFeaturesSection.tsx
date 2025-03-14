@@ -1,10 +1,14 @@
 import { Center, Flex, Image, Title, Text, Box } from "@mantine/core";
+import { theme } from "../../config/mantineTheme";
 import dropBear from "../../assets/images/drop-bear.png";
 
 export default function HomeFeaturesSection() {
   return (
     <>
-      <Flex direction={"column"}>
+      <Flex
+        style={{ backgroundColor: theme.colors.green[0] }}
+        direction={"column"}
+      >
         <Center>
           <Flex
             className="featureSection"
@@ -14,9 +18,8 @@ export default function HomeFeaturesSection() {
             <Image
               className="imageRight"
               src={dropBear}
-              radius={"md"}
               h={"50vh"}
-              w={"75vw"}
+              w={"65vw"}
             />
             <Flex className="textContainer" direction="column">
               <Box className="boxedTitle">
