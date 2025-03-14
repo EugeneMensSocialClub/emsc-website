@@ -8,6 +8,13 @@ import '../assets/stylesheets/katibeh.css'
 import '../assets/stylesheets/prozaLibre.css'
 
  const themeOverride = createTheme({
+  lineHeights: {
+    xs: '1.4',
+    sm: '1.45',
+    md: '1.55',
+    lg: '1.6',
+    xl: '1.65',
+  },
   white: '#FFF0D1',
   black: '#132F1A',
   colors: {
@@ -48,7 +55,7 @@ import '../assets/stylesheets/prozaLibre.css'
     fontFamily: 'Katibeh, sans-serif',
     sizes: {
       h1: { fontSize: rem(51.2) },
-      h2: { fontSize: rem(39.4) },
+      h2: { fontSize: rem(39.4), lineHeight: '1'},
       h3: { fontSize: rem(30.3) },
     },
   },
