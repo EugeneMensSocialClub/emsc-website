@@ -18,13 +18,9 @@ export function HomeRoute() {
       {isMobile ? <MobileHeroSection /> : <HomeHeroSection />}
       <Center id="test-center" w={"100%"}>
         <Box maw={1920} miw={320}>
-          <Center>
-            <Flex direction={"column"}>
-              <Center>
-                {isMobile ? <MobileFeaturesSection /> : <HomeFeaturesSection />}
-              </Center>
-            </Flex>
-          </Center>
+          <Flex direction={"column"}>
+            {isMobile ? <MobileFeaturesSection /> : <HomeFeaturesSection />}
+          </Flex>
           {isMobile ? <MobileHomeTestimonial /> : <HomeTestimonial />}
         </Box>
       </Center>
