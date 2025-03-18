@@ -46,10 +46,10 @@
 
 .featureSection {
   justify-content: center;
-
+  color: var(--mantine-color-white);
   & .textBody {
     max-width: 568px;
-    margin-top: 24px;
+    margin-top: 10px;
     margin-left: 1rem;
   }
   & .boxedTitle {
@@ -60,7 +60,7 @@
     padding: 15px;
   }
   & .textContainer{
-    margin-top: 3rem;
+    margin-top: .5rem;
     margin-right: 1rem;
   }
 }
