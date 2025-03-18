@@ -10,7 +10,8 @@ export default function HomeHeroSection() {
     >
       <Box className="heroBackgound" />
 
-      <Center mih={"50vh"}>
+      <Center mih={"50vh"} /* needs breakpoints */>
+        {" "}
         <Image src={homeLogo} w={254} />
         <Box className="titleContainer" ml={46}>
           <Box>

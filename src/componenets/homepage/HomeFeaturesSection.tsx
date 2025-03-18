@@ -27,6 +27,7 @@ export default function HomeFeaturesSection() {
                 base: "80vw",
                 sm: "50vw",
                 lg: "40vw",
+                xl: "30vw",
               }} /* Controls width */
               fit="cover"
             />

@@ -12,8 +12,8 @@ import '../assets/stylesheets/prozaLibre.css'
     xs: '30em',  // 480px
     sm: '48em',  // 768px
     md: '64em',  // 1024px
-    lg: '74em',  // 1184px
-    xl: '90em',  // 1440px
+    lg: '90em',  // 1440px
+    xl: '160em',  // 2560
   },
   lineHeights: {
     xs: '1.4',

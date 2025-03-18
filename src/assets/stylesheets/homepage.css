@@ -60,7 +60,7 @@
     padding: 15px;
   }
   & .textContainer{
-    margin-top: .5rem;
+    margin-top: 1rem;
     margin-right: 1rem;
     max-width: 50vw;
   }
@@ -120,7 +120,7 @@
 }
 
 .mantine-Carousel-indicators button {
-  background-color: var(--mantine-color-black);
+  background-color: var(--mantine-color-green-1);
   margin-top: 10px;
   border-radius: 50%;
   width: 10px;
