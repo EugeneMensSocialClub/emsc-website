@@ -8,6 +8,13 @@ import '../assets/stylesheets/katibeh.css'
 import '../assets/stylesheets/prozaLibre.css'
 
  const themeOverride = createTheme({
+  breakpoints: {
+    xs: '30em',  // 480px
+    sm: '48em',  // 768px
+    md: '64em',  // 1024px
+    lg: '90em',  // 1440px
+    xl: '160em',  // 2560
+  },
   lineHeights: {
     xs: '1.4',
     sm: '1.45',
