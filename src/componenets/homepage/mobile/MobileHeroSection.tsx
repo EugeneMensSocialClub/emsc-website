@@ -3,10 +3,10 @@ import { Box, Center, Title, BackgroundImage, Flex } from "@mantine/core";
 
 export default function MobileHeroSection() {
   return (
-    <Box className="heroTitleContainer">
+    <Box className="mobileHeroTitleContainer">
       <BackgroundImage style={{ padding: 0 }} src={logo}>
         <Flex direction={"column"}>
-          <Center mt={40}>
+          <Center mt={75}>
             <Title className="titleText" lh={0.9} order={1}>
               Eugene
             </Title>

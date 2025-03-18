@@ -8,14 +8,28 @@ import '../assets/stylesheets/katibeh.css'
 import '../assets/stylesheets/prozaLibre.css'
 
  const themeOverride = createTheme({
+  breakpoints: {
+    xs: '30em',  // 480px
+    sm: '48em',  // 768px
+    md: '64em',  // 1024px
+    lg: '90em',  // 1440px
+    xl: '160em',  // 2560
+  },
+  lineHeights: {
+    xs: '1.4',
+    sm: '1.45',
+    md: '1.55',
+    lg: '1.6',
+    xl: '1.65',
+  },
   white: '#FFF0D1',
   black: '#132F1A',
   colors: {
     green: [
       '#1B3624',
-      '#22452D',  // * Brand
+      '#22452D',  // * Brand [1]
       '#274F33',
-      '#2D5D3C',  // * Brand
+      '#2D5D3C',  // * Brand [3]
       '#336B44',
       '#39794C',
       '#408754',
@@ -48,7 +62,7 @@ import '../assets/stylesheets/prozaLibre.css'
     fontFamily: 'Katibeh, sans-serif',
     sizes: {
       h1: { fontSize: rem(51.2) },
-      h2: { fontSize: rem(39.4) },
+      h2: { fontSize: rem(39.4), lineHeight: '1'},
       h3: { fontSize: rem(30.3) },
     },
   },
