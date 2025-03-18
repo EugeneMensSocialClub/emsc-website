@@ -3,6 +3,7 @@ import { Flex, Center, Text, Image, Box, Title } from "@mantine/core";
 import layoverImage from "../../assets/images/Layover.png";
 import craftParty from "../../assets/images/CraftParty.png";
 import smallGroup from "../../assets/images/SmallGroup.png";
+import largeGroup from "../../assets/images/whole-group-chambers.png";
 import "../../assets/stylesheets/homepage.css";
 
 export default function HomeTestimonial() {
@@ -20,58 +21,54 @@ export default function HomeTestimonial() {
         >
           <Carousel.Slide>
             <Flex className="carouselSlideContent">
-              <Image
-                className="carouselImage"
-                src={layoverImage}
-                h={"100%"}
-                w={"50%"}
-              />
+              <Image className="carouselImage" src={largeGroup} w={"50%"} />
               <Box className="carouselTextContainer">
                 <Title className="carouselTitle" order={2}>
-                  TRIVIA NIGHTS
+                  SUNDAY MEETUPS
                 </Title>
                 <Text className="carouselText">
-                  "If it weren’t for the Eugene men’s social club, I would’ve
-                  been alone waiting for my connecting flight back."
+                  Rain or shine, you'll always find us hosting an every other
+                  Sunday event we lovingly call "Beers with Buds." It’s the
+                  perfect chance to relax, unwind, and connect with fellow
+                  members over great conversation and cold brews (or non-brews).
+                  Many of us have come to look forward to the welcoming vibes
+                  and friendly faces.
                 </Text>
               </Box>
             </Flex>
           </Carousel.Slide>
           <Carousel.Slide>
             <Flex>
-              <Image
-                className="carouselImage"
-                src={craftParty}
-                h={"100%"}
-                w={"50%"}
-              />
+              <Image className="carouselImage" src={craftParty} w={"50%"} />
               <Box className="carouselTextContainer">
                 <Title className="carouselTitle" order={2}>
                   LEGOS ARE FOR ADULTS
                 </Title>
                 <Text className="carouselText">
-                  "With EMSC, I've been able to relive my childhood by playing
-                  with Legos with my friends."
+                  Building isn’t just for kids! Our LEGO nights bring out the
+                  creativity in all of us—whether you're engineering an epic
+                  spaceship, crafting a detailed cityscape, or just snapping
+                  bricks together over good conversation. There’s something
+                  meditative about the process, and it’s even better when shared
+                  with fellow builders.
                 </Text>
               </Box>
             </Flex>
           </Carousel.Slide>
           <Carousel.Slide>
             <Flex>
-              <Image
-                className="carouselImage"
-                src={smallGroup}
-                h={"100%"}
-                w={"50%"}
-              />
+              <Image className="carouselImage" src={smallGroup} w={"50%"} />
               <Box className="carouselTextContainer" id="textContainer">
                 <Title className="carouselTitle" order={2}>
-                  SUNDAY MEETUPS
+                  TRIVIA NIGHTS
                 </Title>
                 <Text className="carouselText">
-                  "After living in Eugene for almost two years, this group gave
-                  me a powerful method of making wonderful freinds in a city
-                  where it had proven hard to meet people."
+                  Put your knowledge to the test at our Trivia Nights, where
+                  quick thinking and random facts reign supreme! Whether you’re
+                  a history buff, pop culture aficionado, or just in it for the
+                  laughs, there’s a spot for you on the leaderboard. It’s all in
+                  good fun—because winning isn’t everything… but bragging rights
+                  are pretty nice!
                 </Text>
               </Box>
             </Flex>
