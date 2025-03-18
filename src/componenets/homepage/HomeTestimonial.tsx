@@ -16,7 +16,6 @@ export default function HomeTestimonial() {
           withControls={false}
           slideGap={"xl"}
           controlsOffset={"xl"}
-          maw={1280}
           loop
         >
           <Carousel.Slide>

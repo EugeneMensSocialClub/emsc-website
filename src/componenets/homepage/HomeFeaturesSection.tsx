@@ -18,8 +18,17 @@ export default function HomeFeaturesSection() {
             <Image
               className="imageRight"
               src={dropBear}
-              h={"50vh"}
-              w={"65vw"}
+              mah={{
+                base: "40vh",
+                sm: "50vh",
+                lg: "35vh",
+              }} /* Limits max height */
+              maw={{
+                base: "80vw",
+                sm: "50vw",
+                lg: "40vw",
+              }} /* Controls width */
+              fit="cover"
             />
             <Flex className="textContainer" direction="column">
               <Box className="boxedTitle">

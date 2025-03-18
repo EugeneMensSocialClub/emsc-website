@@ -62,6 +62,7 @@
   & .textContainer{
     margin-top: .5rem;
     margin-right: 1rem;
+    max-width: 50vw;
   }
 }
 
@@ -88,7 +89,7 @@
 }
 
 .mantine-Carousel-root {
-  max-width: calc(80rem* var(--mantine-scale)) !important;
+  max-width: calc(90rem* var(--mantine-scale)) !important;
  }
 
 #card {
