@@ -49,7 +49,7 @@
   color: var(--mantine-color-white);
   & .textBody {
     max-width: 568px;
-    margin-top: 10px;
+    margin-top: 24px;
     margin-left: 1rem;
   }
   & .boxedTitle {
@@ -65,18 +65,31 @@
   }
 }
 
-.testimonialContainer {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-  margin-right: 6rem;
-  margin-left: 6rem;
-
+.carouselContainer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  & .carouselTextContainer {
+    background-color: var(--mantine-color-white);
+    padding: 2rem;
+    & .carouselText {
+      color: var(--mantine-color-black);
+      font-size: 14px;
+    }
+    & .carouselTitle {
+      color: var(--mantine-color-orange-2)
+    }
+    & .carouselSlideContent {
+      min-height: fit-content;
+    }
+    & .carouselImage {
+      flex: one;
+    }
+  }
 }
 
-
-.tesmonialTitleContainer {
-  margin-bottom: 3rem;
-}
+.mantine-Carousel-root {
+  max-width: calc(80rem* var(--mantine-scale)) !important;
+ }
 
 #card {
   display: flex;
@@ -85,8 +98,6 @@
   align-items: center;
   background-size: cover;
   background-position: center;
-
-
   & .quoteContainer {
     display: flex;
     flex-direction: column;
@@ -110,11 +121,20 @@
 .mantine-Carousel-indicators button {
   background-color: var(--mantine-color-black);
   margin-top: 10px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+
 }
 
 .mantine-Carousel-indicators {
-  position: absolute;
-  top: 170px;
+  all: unset !important;
+  position: absolute !important; /* Reapply positioning manually */
+  bottom: 15px !important;  /* Needs breakpoint for larger screens */
+  right: 200px !important;
+  display: flex !important;
+  justify-content: flex-end !important;
 }
 /* MOBILE STYLES */
 @media (max-width: 768px) {
