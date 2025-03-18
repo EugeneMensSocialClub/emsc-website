@@ -16,7 +16,7 @@ export default function HomeTestimonial() {
       </Center>
       <Center>
         <Carousel
-          slideSize={{ base: "100%", sm: "75%" }}
+          slideSize={{ base: "50%", sm: "75%" }}
           slideGap={"xl"}
           controlsOffset={"xl"}
           maw={1280}

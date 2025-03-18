@@ -1,8 +1,3 @@
-.homepageContainer {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .heroTitleContainer {
   color: var(--mantine-color-white);
   position: relative;
@@ -51,19 +46,22 @@
 
 .featureSection {
   justify-content: center;
-
-  margin-top: 6rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-
-  & .imageLeft {
-    margin-right: 3rem;
-  }
-  & .imageRight {
-    margin-left: 3rem;
-  }
+  color: var(--mantine-color-white);
   & .textBody {
-    margin-top: 1rem;
+    max-width: 568px;
+    margin-top: 10px;
+    margin-left: 1rem;
+  }
+  & .boxedTitle {
+    margin-left: 1rem;
+    border-style: solid;
+    border-color: var(--mantine-color-white);
+    width: fit-content;
+    padding: 15px;
+  }
+  & .textContainer{
+    margin-top: .5rem;
+    margin-right: 1rem;
   }
 }
 

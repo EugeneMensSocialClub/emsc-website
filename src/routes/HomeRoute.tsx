@@ -16,18 +16,10 @@ export function HomeRoute() {
     <Flex direction={"column"}>
       <Navigation />
       {isMobile ? <MobileHeroSection /> : <HomeHeroSection />}
-      <Center id="test-center" w={"100%"}>
-        <Box maw={1920} miw={320}>
-          <Center>
-            <Flex direction={"column"}>
-              <Center>
-                {isMobile ? <MobileFeaturesSection /> : <HomeFeaturesSection />}
-              </Center>
-            </Flex>
-          </Center>
-          {isMobile ? <MobileHomeTestimonial /> : <HomeTestimonial />}
-        </Box>
-      </Center>
+      <Flex direction={"column"}>
+        {isMobile ? <MobileFeaturesSection /> : <HomeFeaturesSection />}
+      </Flex>
+      {isMobile ? <MobileHomeTestimonial /> : <HomeTestimonial />}
     </Flex>
   );
 }
