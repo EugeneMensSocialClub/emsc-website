@@ -1,3 +1,10 @@
+@import '../stylesheets/home/_hero.css';
+@import '../stylesheets/home/_feature.css';
+@import '../stylesheets/home/_carousel.css';
+@import '../stylesheets/home/_testimonials.css';
+@import '../stylesheets/home/_media_queries.css';
+/* refactor css in a later branch */
+
 .heroTitleContainer {
   color: var(--mantine-color-white);
   position: relative;
