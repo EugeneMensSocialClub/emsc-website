@@ -14,7 +14,7 @@
   width: 100vw;
   & .titleText {
     font-size: clamp(16px, 7vw, 143px);
-    line-height: 65%;
+    line-height: 80%;
   }
   & .textBody {
     font-size: clamp(16px, 1vw, 24px);
@@ -84,7 +84,8 @@
       font-size: 14px;
     }
     & .carouselTitle {
-      color: var(--mantine-color-orange-2)
+      color: var(--mantine-color-orange-2);
+      margin-bottom: 20px;
     }
     & .carouselSlideContent {
       min-height: fit-content;
@@ -96,7 +97,7 @@
 }
 
 .mantine-Carousel-root {
-  max-width: calc(90rem* var(--mantine-scale)) !important;
+  max-width: calc(120rem* var(--mantine-scale)) !important;
  }
 
 #card {
@@ -151,7 +152,6 @@
   text-align: center;
   & .testimonialHeading {
     font-size: 2rem;
-    font-family: 'Josefin Slab', serif;
     color: var(--mantine-color-white);
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -163,14 +163,12 @@
     & .testimonialText {
       font-size: 1.5rem;
       color: var(--mantine-color-white);
-      font-family: 'Josefin Slab', serif;
       margin-bottom: 1rem;
     }
     & .testimonialName {
       color: var(--mantine-color-yellow-4);
       font-weight: bold;
       font-size: 1.25rem;
-      font-family: 'Josefin Slab', serif;
     }
   }
 }
@@ -227,6 +225,48 @@
 @keyframes fadeOut {
   from { opacity: 1 }
   to { opacity: 0 }
+}
+
+.discordSection {
+  position: relative;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mantine-color-orange-2);
+}
+
+.discordBackground{
+  background-image: url("../images/emsc_pattern_darkgreen.svg");
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 75%;
+  z-index: 0;
+  background-color: var(--mantine-color-orange-2); /* Optional fallback */
+  position: absolute;
+  height: 100%;
+  mask-image: linear-gradient(to right, black 0%, transparent 100%);
+}
+
+.discordContent, .discordImageWrapper {
+  position: relative;
+  z-index: 1; /* Sit above the background */
+}
+
+.discordContent{
+  max-width: 30vw;
+  flex: 1 1 50%;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--mantine-color-black);
+
+}
+
+.discordImageWrapper {
+  padding: 4rem 2rem;
 }
 
 /* MOBILE STYLES */

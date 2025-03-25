@@ -6,6 +6,7 @@ import {
 } from '@mantine/core';
 import '../assets/stylesheets/katibeh.css'
 import '../assets/stylesheets/prozaLibre.css'
+import '../assets/stylesheets/kastelVoire.css'
 
  const themeOverride = createTheme({
   breakpoints: {
@@ -23,7 +24,7 @@ import '../assets/stylesheets/prozaLibre.css'
     xl: '1.65',
   },
   white: '#FFF0D1',
-  black: '#132F1A',
+  black: '#21452D',
   colors: {
     green: [
       '#1B3624',
@@ -59,7 +60,7 @@ import '../assets/stylesheets/prozaLibre.css'
   fontFamily: 'ProzaLibre-Regular, sans-serif',
 
   headings: {
-    fontFamily: 'Katibeh, sans-serif',
+    fontFamily: 'Kastel-Voire, sans-serif',
     sizes: {
       h1: { fontSize: rem(51.2) },
       h2: { fontSize: rem(39.4), lineHeight: '1'},
