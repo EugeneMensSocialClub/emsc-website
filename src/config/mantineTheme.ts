@@ -61,6 +61,7 @@ import '../assets/stylesheets/kastelVoire.css'
 
   headings: {
     fontFamily: 'Kastel-Voire, sans-serif',
+    fontWeight: "400",
     sizes: {
       h1: { fontSize: rem(51.2) },
       h2: { fontSize: rem(39.4), lineHeight: '1'},

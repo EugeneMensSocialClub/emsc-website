@@ -4,10 +4,7 @@ import { theme } from "../../config/mantineTheme";
 
 export default function HomeHeroSection() {
   return (
-    <Box
-      className="heroTitleContainer"
-      style={{ backgroundColor: theme.colors.green[1] }}
-    >
+    <Box className="heroTitleContainer">
       <Box className="heroBackgound" />
 
       <Center mih={"50vh"} /* needs breakpoints */>

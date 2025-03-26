@@ -10,6 +10,7 @@
   position: relative;
   overflow: hidden;
   padding: 0 !important;
+  background-color: var(--mantine-color-green-1);
   height: 50vh;
   width: 100vw;
   & .titleText {
