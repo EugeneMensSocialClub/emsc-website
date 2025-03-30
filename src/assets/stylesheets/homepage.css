@@ -2,284 +2,30 @@
 @import '../stylesheets/home/_feature.css';
 @import '../stylesheets/home/_carousel.css';
 @import '../stylesheets/home/_testimonials.css';
+@import '../stylesheets/home/_discord.css';
 @import '../stylesheets/home/_media_queries.css';
-/* refactor css in a later branch */
-
-.heroTitleContainer {
-  color: var(--mantine-color-white);
-  position: relative;
-  overflow: hidden;
-  padding: 0 !important;
-  background-color: var(--mantine-color-green-1);
-  height: 50vh;
-  width: 100vw;
-  & .titleText {
-    font-size: clamp(16px, 7vw, 143px);
-    line-height: 80%;
-  }
-  & .textBody {
-    font-size: clamp(16px, 1vw, 24px);
-  }
-}
-
-.titleContainer {
-  max-width: 30vw;
-  min-width: 30vw;
-}
-
-.subTitleContainer {
-  max-width: 22vw;
-  min-width: 22vw;
-}
-
-
-.heroBackgound {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/EMSC_pattern.svg);
-  background-size: contain;
-  background-position: left top;
-  background-repeat: repeat-x;
-  mask-image: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 90%);
-}
-
-.upperWelcome {
-  margin-top: 3rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.featureSection {
-  justify-content: center;
-  color: var(--mantine-color-white);
-  & .textBody {
-    max-width: 568px;
-    margin-top: 24px;
-    margin-left: 1rem;
-  }
-  & .boxedTitle {
-    margin-left: 1rem;
-    border-style: solid;
-    border-color: var(--mantine-color-white);
-    width: fit-content;
-    padding: 15px;
-  }
-  & .textContainer{
-    margin-top: 1rem;
-    margin-right: 1rem;
-    max-width: 50vw;
-  }
-}
-
-.carouselContainer {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  & .carouselTextContainer {
-    background-color: var(--mantine-color-white);
-    padding: 2rem;
-    & .carouselText {
-      color: var(--mantine-color-black);
-      font-size: 14px;
-    }
-    & .carouselTitle {
-      color: var(--mantine-color-orange-2);
-      margin-bottom: 20px;
-    }
-    & .carouselSlideContent {
-      min-height: fit-content;
-    }
-    & .carouselImage {
-      flex: one;
-    }
-  }
-}
-
-.mantine-Carousel-root {
-  max-width: calc(120rem* var(--mantine-scale)) !important;
- }
-
-#card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  & .quoteContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--mantine-color-white);
-    font-size: 20px;
-    padding: 20px;
-    max-width: 700px;
-    z-index: 1;
-  }
-  & .quote {
-    font-style: italic;
-  }
-  & .quoteBlack {
-    color: var(--mantine-color-black);
-    font-size:20px;
-    z-index: 1;
-  }
-}
-
-.mantine-Carousel-indicators button {
-  background-color: var(--mantine-color-green-1);
-  margin-top: 10px;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 3px;
-
-}
-
-.mantine-Carousel-indicators {
-  all: unset !important;
-  position: absolute !important; /* Reapply positioning manually */
-  bottom: 15px !important;  /* Needs breakpoint for larger screens */
-  right: 200px !important;
-  display: flex !important;
-  justify-content: flex-end !important;
-}
-
-.testimonialSection {
-  background-color: var(--mantine-color-green-3);
-  padding: 4rem 2rem;
-  text-align: center;
-  & .testimonialHeading {
-    font-size: 2rem;
-    color: var(--mantine-color-white);
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  & .testimonialTextWrapper {
-    max-width: 750px;
-    margin: 0 auto;
-    & .testimonialText {
-      font-size: 1.5rem;
-      color: var(--mantine-color-white);
-      margin-bottom: 1rem;
-    }
-    & .testimonialName {
-      color: var(--mantine-color-yellow-4);
-      font-weight: bold;
-      font-size: 1.25rem;
-    }
-  }
-}
-
-.testimonialImages {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
-}
-
-.testimonialImageWrapper {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 6px solid transparent;
-  transition: filter 0.3s, border-color 0.3s;
-  filter: grayscale(1);
-  cursor: pointer;
-}
-
-.testimonialImageWrapper.active {
-  filter: none;
-  border: 3px solid var(--mantine-color-yellow-4);
-}
-
-.testimonialImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding: 5px;
-}
-
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 1s ease forwards;
-}
-.fade-out {
-  animation: fadeOut 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
-}
-
-@keyframes fadeOut {
-  from { opacity: 1 }
-  to { opacity: 0 }
-}
-
-.discordSection {
-  position: relative;
-  display: flex;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--mantine-color-orange-2);
-}
-
-.discordBackground{
-  background-image: url("../images/emsc_pattern_darkgreen.svg");
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 75%;
-  z-index: 0;
-  background-color: var(--mantine-color-orange-2); /* Optional fallback */
-  position: absolute;
-  height: 100%;
-  mask-image: linear-gradient(to right, black 0%, transparent 100%);
-}
-
-.discordContent, .discordImageWrapper {
-  position: relative;
-  z-index: 1; /* Sit above the background */
-}
-
-.discordContent{
-  max-width: 30vw;
-  flex: 1 1 50%;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--mantine-color-black);
-
-}
-
-.discordImageWrapper {
-  padding: 4rem 2rem;
-}
+/* refactor css in a later brsanch */
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
-  .mobileHeroTitleContainer {
+  .heroTitleContainer {
     color: var(--mantine-color-white);
     padding: 0 !important;
     width: 100vw;
+    height: auto;
+    & .heroContent{
+      display: flex;
+      flex-direction: column;
+    }
     & .titleText {
-      font-size: 7rem
+      font-size: 5rem
     }
   }
+
+  .titleContainer {
+    margin-left: 0px;
+  }
+
   .upperWelcome {
     margin-top: 3rem;
     margin-left: 1rem;

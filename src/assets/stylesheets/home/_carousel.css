@@ -1,0 +1,45 @@
+.carouselContainer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  & .carouselTextContainer {
+    background-color: var(--mantine-color-white);
+    padding: 2rem;
+    & .carouselText {
+      color: var(--mantine-color-black);
+      font-size: 14px;
+    }
+    & .carouselTitle {
+      color: var(--mantine-color-orange-2);
+      margin-bottom: 20px;
+    }
+    & .carouselSlideContent {
+      min-height: fit-content;
+    }
+    & .carouselImage {
+      flex: one;
+    }
+  }
+}
+
+.mantine-Carousel-root {
+  max-width: calc(120rem* var(--mantine-scale)) !important;
+ }
+
+.mantine-Carousel-indicators button {
+  background-color: var(--mantine-color-green-1);
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+
+}
+
+.mantine-Carousel-indicators {
+  all: unset !important;
+  position: absolute !important; /* Reapply positioning manually */
+  bottom: 15px !important;  /* Needs breakpoint for larger screens */
+  right: 200px !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+}

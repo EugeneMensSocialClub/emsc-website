@@ -17,17 +17,13 @@ export function HomeRoute() {
   return (
     <Flex direction={"column"}>
       <Navigation />
-      {isMobile ? <MobileHeroSection /> : <HomeHeroSection />}
+      {isMobile ? <HomeHeroSection /> : <HomeHeroSection />}
       <Flex direction={"column"}>
-        {isMobile ? <MobileFeaturesSection /> : <HomeFeaturesSection />}
+        {isMobile ? <HomeFeaturesSection /> : <HomeFeaturesSection />}
       </Flex>
-      {isMobile ? <MobileHomeTestimonial /> : <HomeCarousel />}
-      {!isMobile && (
-        <>
-          <Testimonials />
-          <JoinDiscordSection />
-        </>
-      )}
+      {isMobile ? <HomeCarousel /> : <HomeCarousel />}
+      <Testimonials />
+      <JoinDiscordSection />
     </Flex>
   );
 }

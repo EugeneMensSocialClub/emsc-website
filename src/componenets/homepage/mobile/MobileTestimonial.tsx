@@ -19,7 +19,7 @@ export default function HomeTestimonial() {
           slideGap={"xl"}
           controlsOffset={"xl"}
           withControls={false}
-          withIndicators
+          withIndicators={false}
           maw={680}
           loop
         >
