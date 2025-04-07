@@ -3,28 +3,11 @@
 @import '../stylesheets/home/_carousel.css';
 @import '../stylesheets/home/_testimonials.css';
 @import '../stylesheets/home/_discord.css';
-@import '../stylesheets/home/_media_queries.css';
+/* @import '../stylesheets/home/_media_queries.css'; */
 /* refactor css in a later brsanch */
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
-  .heroTitleContainer {
-    color: var(--mantine-color-white);
-    padding: 0 !important;
-    width: 100vw;
-    height: auto;
-    & .heroContent{
-      display: flex;
-      flex-direction: column;
-    }
-    & .titleText {
-      font-size: 5rem
-    }
-  }
-
-  .titleContainer {
-    margin-left: 0px;
-  }
 
   .upperWelcome {
     margin-top: 3rem;
