@@ -66,6 +66,9 @@ import '../assets/stylesheets/kastelVoire.css'
       h1: { fontSize: rem(51.2) },
       h2: { fontSize: rem(39.4), lineHeight: '1'},
       h3: { fontSize: rem(30.3) },
+      h4: { fontSize: rem(23.3) },
+      h5: { fontSize: rem(17.9) },
+      h6: { fontSize: rem(13.8) },
     },
   },
 });
