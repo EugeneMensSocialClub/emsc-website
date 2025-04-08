@@ -19,7 +19,7 @@ export function HomeRoute() {
       <Flex direction={"column"}>
         {isMobile ? <HomeFeaturesSection /> : <HomeFeaturesSection />}
       </Flex>
-      {isMobile ? <MobileHomeTestimonial /> : <HomeCarousel />}
+      {isMobile ? <HomeCarousel /> : <HomeCarousel />}
       {!isMobile && (
         <>
           <Testimonials />

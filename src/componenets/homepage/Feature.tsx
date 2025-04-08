@@ -34,9 +34,8 @@ export default function HomeFeaturesSection() {
               <Box className="titleFrame">
                 <Title
                   className="welcomeTitle"
-                  size="h2"
                   style={{ margin: 0, padding: 0, lineHeight: 1 }}
-                  order={3}
+                  order={2}
                   textWrap="nowrap"
                 >
                   WELCOME TO EMSC
