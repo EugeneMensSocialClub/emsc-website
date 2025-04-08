@@ -5,7 +5,7 @@ import smallGroup from "../../assets/images/SmallGroup.png";
 import largeGroup from "../../assets/images/whole-group-chambers.png";
 import "../../assets/stylesheets/homepage.css";
 
-export default function HomeTestimonial() {
+export default function HomeCarousel() {
   return (
     <Flex className="carouselContainer" direction="column">
       <Center>
