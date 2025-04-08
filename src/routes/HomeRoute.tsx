@@ -9,6 +9,7 @@ import MobileHeroSection from "../componenets/homepage/mobile/MobileHeroSection"
 import "../assets/stylesheets/homepage.css";
 import useIsMobile from "../hooks/useIsMobile";
 import Navigation from "../componenets/Navigation";
+import JoinDiscordSection from "../componenets/homepage/JoinDiscord";
 
 export function HomeRoute() {
   const isMobile = useIsMobile();
@@ -16,12 +17,13 @@ export function HomeRoute() {
   return (
     <Flex direction={"column"}>
       <Navigation />
-      {isMobile ? <MobileHeroSection /> : <HomeHeroSection />}
+      {isMobile ? <HomeHeroSection /> : <HomeHeroSection />}
       <Flex direction={"column"}>
-        {isMobile ? <MobileFeaturesSection /> : <HomeFeaturesSection />}
+        {isMobile ? <HomeFeaturesSection /> : <HomeFeaturesSection />}
       </Flex>
-      {isMobile ? <MobileHomeTestimonial /> : <HomeCarousel />}
+      {isMobile ? <HomeCarousel /> : <HomeCarousel />}
       <Testimonials />
+      <JoinDiscordSection />
     </Flex>
   );
 }

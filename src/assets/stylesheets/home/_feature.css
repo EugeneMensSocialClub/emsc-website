@@ -1,0 +1,21 @@
+.featureSection {
+  justify-content: center;
+  color: var(--mantine-color-white);
+  & .textBody {
+    max-width: 568px;
+    margin-top: 24px;
+    margin-left: 1rem;
+  }
+  & .boxedTitle {
+    margin-left: 1rem;
+    border-style: solid;
+    border-color: var(--mantine-color-white);
+    width: fit-content;
+    padding: 15px;
+  }
+  & .textContainer{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    max-width: 50vw;
+  }
+}

@@ -40,7 +40,7 @@ export default function HomeCarousel() {
               <Image className="carouselImage" src={craftParty} w={"50%"} />
               <Box className="carouselTextContainer">
                 <Title className="carouselTitle" order={2}>
-                  LEGOS ARE FOR ADULTS
+                  LEGOS FOR ADULTS
                 </Title>
                 <Text className="carouselText">
                   Building isn’t just for kids! Our LEGO nights bring out the
