@@ -1,6 +1,5 @@
 import { Flex } from "@mantine/core";
 import HomeCarousel from "../componenets/homepage/Carousel";
-import MobileHomeTestimonial from "../componenets/homepage/mobile/MobileTestimonial";
 import HomeFeaturesSection from "../componenets/homepage/Feature";
 import HomeHeroSection from "../componenets/homepage/Hero";
 import Testimonials from "../componenets/homepage/Testimonials";
@@ -20,12 +19,8 @@ export function HomeRoute() {
         {isMobile ? <HomeFeaturesSection /> : <HomeFeaturesSection />}
       </Flex>
       {isMobile ? <HomeCarousel /> : <HomeCarousel />}
-      {!isMobile && (
-        <>
-          <Testimonials />
-          <JoinDiscordSection />
-        </>
-      )}
+      <Testimonials />
+      <JoinDiscordSection />
     </Flex>
   );
 }
