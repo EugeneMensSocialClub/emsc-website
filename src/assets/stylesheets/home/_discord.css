@@ -33,9 +33,23 @@
   flex-direction: column;
   justify-content: center;
   color: var(--mantine-color-black);
-
 }
 
 .discordImageWrapper {
   padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+
+  .discordContentWrapper {
+    flex: column;
+  }
+
+  .discordContent {
+    max-width: 100%;
+    gap: 2rem;
+  }
+  .discordTitle {
+    text-align: center;
+  }
 }
