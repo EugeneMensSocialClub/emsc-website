@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Box, Image, Text, Title } from "@mantine/core";
+import useIsMobile from "../../hooks/useIsMobile";
 import clsx from "clsx";
 import peterImage from "../../assets/images/Peter_M.png";
 import joshuaImage from "../../assets/images/Joshua_G.png";
 import tomImage from "../../assets/images/Tom_B.png";
 import "../../assets/stylesheets/homepage.css";
+import { Carousel } from "@mantine/carousel";
 
 const testimonials = [
   {
@@ -26,7 +28,9 @@ const testimonials = [
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
   const [isFading] = useState(false);
+  const isMobile = useIsMobile();
 
   return (
     <Box className="testimonialSection">
@@ -34,21 +38,52 @@ export default function Testimonials() {
         From Our Members
       </Title>
       <Box className="testimonialImages">
-        {testimonials.map((testimonial, index) => (
-          <Box
-            key={index}
-            className={clsx("testimonialImageWrapper", {
-              active: index === activeIndex,
-            })}
-            onClick={() => setActiveIndex(index)}
-          >
-            <Image
-              src={testimonial.image}
-              alt={testimonial.name}
-              className="testimonialImage"
-            />
-          </Box>
-        ))}
+        {isMobile ? (
+          <>
+            <Carousel
+              onSlideChange={(progress) => {
+                const index = Math.round(progress);
+                setActiveSlide(index);
+              }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <Carousel.Slide key={index} className="testimonialSlide">
+                  <Box
+                    key={index}
+                    className={clsx("testimonialImageWrapper", {
+                      active: index === activeSlide,
+                    })}
+                    onClick={() => setActiveSlide(index)}
+                  >
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="testimonialImage"
+                    />
+                  </Box>
+                </Carousel.Slide>
+              ))}
+            </Carousel>
+          </>
+        ) : (
+          <>
+            {testimonials.map((testimonial, index) => (
+              <Box
+                key={index}
+                className={clsx("testimonialImageWrapper", {
+                  active: index === activeIndex,
+                })}
+                onClick={() => setActiveIndex(index)}
+              >
+                <Image
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="testimonialImage"
+                />
+              </Box>
+            ))}
+          </>
+        )}
       </Box>
       <Box
         key={activeIndex}
@@ -56,12 +91,25 @@ export default function Testimonials() {
           isFading ? "fade-out" : "fade-in"
         }`}
       >
-        <Text className="testimonialText">
-          “{testimonials[activeIndex].text}”
-        </Text>
-        <Text className="testimonialName">
-          {testimonials[activeIndex].name}
-        </Text>
+        {isMobile ? (
+          <>
+            <Text className="testimonialText">
+              “{testimonials[activeSlide].text}”
+            </Text>
+            <Text className="testimonialName">
+              {testimonials[activeSlide].name}
+            </Text>
+          </>
+        ) : (
+          <>
+            <Text className="testimonialText">
+              “{testimonials[activeIndex].text}”
+            </Text>
+            <Text className="testimonialName">
+              {testimonials[activeIndex].name}
+            </Text>
+          </>
+        )}
       </Box>
     </Box>
   );

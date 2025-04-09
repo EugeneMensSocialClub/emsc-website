@@ -26,6 +26,10 @@
   }
 }
 
+.testimonialSlide {
+  flex: 1 !important;
+}
+
 .testimonialImages {
   display: flex;
   justify-content: center;
