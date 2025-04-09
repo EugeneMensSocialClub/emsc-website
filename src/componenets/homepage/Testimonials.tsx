@@ -15,12 +15,12 @@ const testimonials = [
     image: peterImage,
   },
   {
-    name: "Jacob R.",
+    name: "Joshua G.",
     text: "Joining EMSC was the best thing I did after moving. Now I have real friends who show up for me.",
     image: joshuaImage,
   },
   {
-    name: "Luis D.",
+    name: "Tom B.",
     text: "With EMSC, I've been able to relive my childhood by playing with Legos with my friends.",
     image: tomImage,
   },
@@ -28,7 +28,7 @@ const testimonials = [
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(1);
   const [isFading] = useState(false);
   const isMobile = useIsMobile();
 
@@ -45,6 +45,8 @@ export default function Testimonials() {
                 const index = Math.round(progress);
                 setActiveSlide(index);
               }}
+              withControls={false}
+              loop
             >
               {testimonials.map((testimonial, index) => (
                 <Carousel.Slide key={index} className="testimonialSlide">
