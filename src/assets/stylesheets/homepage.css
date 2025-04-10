@@ -3,53 +3,15 @@
 @import '../stylesheets/home/_carousel.css';
 @import '../stylesheets/home/_testimonials.css';
 @import '../stylesheets/home/_discord.css';
-@import '../stylesheets/home/_media_queries.css';
+/* @import '../stylesheets/home/_media_queries.css'; */
 /* refactor css in a later brsanch */
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
-  .heroTitleContainer {
-    color: var(--mantine-color-white);
-    padding: 0 !important;
-    width: 100vw;
-    height: auto;
-    & .heroContent{
-      display: flex;
-      flex-direction: column;
-    }
-    & .titleText {
-      font-size: 5rem
-    }
-  }
-
-  .titleContainer {
-    margin-left: 0px;
-  }
-
   .upperWelcome {
     margin-top: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-
-  .featureSection {
-    justify-content: center;
-  
-    margin-top: 3rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-  
-    & .imageLeft {
-      margin-right: 0rem;
-    }
-    & .imageRight {
-      margin-left: 0rem;
-    }
-    & .textBody {
-      margin-top: 0rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
   }
 .quoteContainer {
   & .quote {
@@ -60,7 +22,6 @@
     padding-top: 10px;
   }
 }
-
 
   .testimonialContainer {
     margin-top: 3rem;

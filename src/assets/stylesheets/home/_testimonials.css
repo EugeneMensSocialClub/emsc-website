@@ -1,7 +1,7 @@
 
 .testimonialSection {
   background-color: var(--mantine-color-green-3);
-  padding: 4rem 2rem;
+  padding-top: 4rem;
   text-align: center;
   & .testimonialHeading {
     font-size: 2rem;
@@ -9,28 +9,36 @@
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    width: 100%;
   }
   & .testimonialTextWrapper {
     max-width: 750px;
     margin: 0 auto;
+    padding: 1rem;
+
     & .testimonialText {
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: var(--mantine-color-white);
       margin-bottom: 1rem;
     }
     & .testimonialName {
       color: var(--mantine-color-yellow-4);
       font-weight: bold;
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
+}
+
+.testimonialSlide {
+  flex: 1 !important;
 }
 
 .testimonialImages {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
 }
 
 .testimonialImageWrapper {

@@ -26,6 +26,18 @@ import '../assets/stylesheets/kastelVoire.css'
   white: '#FFF0D1',
   black: '#21452D',
   colors: {
+    charcoal: [
+      '#f5f5f5',
+      '#e0e0e0',
+      '#c2c2c2',
+      '#a3a3a3',
+      '#858585',
+      '#666666',
+      '#4d4d4d',
+      '#333333',
+      '#1f1f1f',
+      '#0d0d0d',
+    ],
     green: [
       '#1B3624',
       '#22452D',  // * Brand [1]
@@ -66,6 +78,9 @@ import '../assets/stylesheets/kastelVoire.css'
       h1: { fontSize: rem(51.2) },
       h2: { fontSize: rem(39.4), lineHeight: '1'},
       h3: { fontSize: rem(30.3) },
+      h4: { fontSize: rem(23.3) },
+      h5: { fontSize: rem(17.9) },
+      h6: { fontSize: rem(13.8) },
     },
   },
 });

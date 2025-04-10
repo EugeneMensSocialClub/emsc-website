@@ -1,15 +1,23 @@
 .featureSection {
   justify-content: center;
   color: var(--mantine-color-white);
+  & .welcomeTitle{
+    justify-self: center;
+  }
   & .textBody {
     max-width: 568px;
-    margin-top: 24px;
+    margin-top: 1rem;
     margin-left: 1rem;
+    margin-bottom: 1rem;
   }
-  & .boxedTitle {
-    margin-left: 1rem;
+  & .titleContainer{
+    max-width: 100%;
+    width: 100%;    
+  }
+  & .titleFrame {
     border-style: solid;
     border-color: var(--mantine-color-white);
+    border-width: 1px;
     width: fit-content;
     padding: 15px;
   }
@@ -17,5 +25,56 @@
     margin-top: 1rem;
     margin-right: 1rem;
     max-width: 50vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .featureSection {
+    justify-content: center;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    
+    & .welcomeTitle {
+      font-size: 30px;
+    }
+    & .textContainer {
+      max-width: 100%;
+      margin-top: 1rem;
+      margin-right: 0;
+      & .titleContainer {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+      }
+      & .titleFrame{
+        background-color: var(--mantine-color-green-0);
+        justify-self: center;
+        width: 80%;
+      }
+      & .image{
+        width: 100%!important;
+      }
+    }
+    & .image {
+      margin-left: 0rem;
+    }
+    & .textBody {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+
+  .titleFrame {
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+  }
+  .textContainer {
+    margin-top: 0px;
   }
 }
