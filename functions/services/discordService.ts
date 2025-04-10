@@ -1,5 +1,5 @@
 import { Client, GatewayIntentBits } from "discord.js";
-import { AppError } from "../errors/errorHandler";
+import { AppError } from "../errors/errorHandler.js";
 
 interface cacheEntry {
   data: any;
