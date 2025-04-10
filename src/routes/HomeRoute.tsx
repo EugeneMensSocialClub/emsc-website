@@ -1,4 +1,4 @@
-import { Flex, Box, AppShell } from "@mantine/core";
+import { Flex, AppShell } from "@mantine/core";
 import HomeCarousel from "../componenets/homepage/Carousel";
 import HomeFeaturesSection from "../componenets/homepage/Feature";
 import HomeHeroSection from "../componenets/homepage/Hero";
