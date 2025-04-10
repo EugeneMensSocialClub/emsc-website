@@ -1,4 +1,4 @@
-import { Flex } from "@mantine/core";
+import { Flex, Box, AppShell } from "@mantine/core";
 import HomeCarousel from "../componenets/homepage/Carousel";
 import HomeFeaturesSection from "../componenets/homepage/Feature";
 import HomeHeroSection from "../componenets/homepage/Hero";
@@ -12,15 +12,19 @@ export function HomeRoute() {
   const isMobile = useIsMobile();
 
   return (
-    <Flex direction={"column"}>
-      <Navigation />
-      {isMobile ? <HomeHeroSection /> : <HomeHeroSection />}
-      <Flex direction={"column"}>
-        {isMobile ? <HomeFeaturesSection /> : <HomeFeaturesSection />}
-      </Flex>
-      {isMobile ? <HomeCarousel /> : <HomeCarousel />}
-      <Testimonials />
-      <JoinDiscordSection />
-    </Flex>
+    <AppShell header={{ height: 50 }}>
+      <AppShell.Header>
+        <Navigation />
+      </AppShell.Header>
+      <AppShell.Main>
+        {isMobile ? <HomeHeroSection /> : <HomeHeroSection />}
+        <Flex direction={"column"}>
+          {isMobile ? <HomeFeaturesSection /> : <HomeFeaturesSection />}
+        </Flex>
+        {isMobile ? <HomeCarousel /> : <HomeCarousel />}
+        <Testimonials />
+        <JoinDiscordSection />
+      </AppShell.Main>
+    </AppShell>
   );
 }

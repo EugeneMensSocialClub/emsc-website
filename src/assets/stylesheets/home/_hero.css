@@ -42,12 +42,14 @@
   .heroTitleContainer {
     color: var(--mantine-color-white);
     padding: 0 !important;
-    width: 100vw;
-    height: 50vh;
+    height: max-content;
+    padding-top: 75px;
     & .heroContent {
       display: flex;
       flex-direction: column;
       height: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
     & .heroLogo {
       width: 95px;
