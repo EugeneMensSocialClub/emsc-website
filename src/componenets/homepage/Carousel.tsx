@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Carousel } from "@mantine/carousel";
 import { Flex, Center, Text, Image, Box, Title } from "@mantine/core";
+import { EmblaCarouselType } from "embla-carousel";
 import useIsMobile from "../../hooks/useIsMobile";
 import craftParty from "../../assets/images/CraftParty.png";
 import smallGroup from "../../assets/images/SmallGroup.png";
@@ -10,6 +11,8 @@ import "../../assets/stylesheets/homepage.css";
 export default function HomeCarousel() {
   const isMobile = useIsMobile();
   const [activeSlide, setActiveSlide] = useState(0);
+  const [embla, setEmbla] = useState<EmblaCarouselType | null>(null);
+
   const slides = [
     {
       title: "SUNDAY MEETUPS",
@@ -46,6 +49,7 @@ export default function HomeCarousel() {
     <Flex className="carouselContainer" direction="column">
       <Center>
         <Carousel
+          getEmblaApi={setEmbla}
           slidesToScroll={isMobile ? 1 : "auto"}
           slideSize={isMobile ? "100vw" : "75%"}
           withControls={false}
@@ -82,7 +86,10 @@ export default function HomeCarousel() {
                       {slides.map((_, index) => (
                         <Box
                           key={index}
-                          onClick={() => setActiveSlide(index)}
+                          onClick={() => {
+                            setActiveSlide(index);
+                            embla?.scrollTo(index);
+                          }}
                           className={`dot ${
                             index === activeSlide ? "active" : ""
                           }`}
