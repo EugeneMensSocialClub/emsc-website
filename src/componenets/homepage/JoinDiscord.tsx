@@ -1,6 +1,6 @@
-import { Box, Button, Image, Text, Title, Flex } from "@mantine/core";
+import { Box, Image, Text, Title, Flex } from "@mantine/core";
 import useIsMobile from "../../hooks/useIsMobile";
-import { theme } from "../../../src/config/mantineTheme";
+import JoinDiscordCTA from "../DiscordCTA";
 import discordImage from "../../assets/images/discord_preview.png";
 import "../../assets/stylesheets/homepage.css";
 
@@ -21,18 +21,7 @@ export default function JoinDiscordSection() {
           </Text>
           <Flex justify={isMobile ? "center" : "flex-start"}>
             <Box className="buttonBorder">
-              <Button
-                className="discordButton"
-                component="a"
-                href="https://discord.gg/your-invite"
-                target="_blank"
-                maw={165}
-                color={theme.colors.green[0]}
-                radius={0}
-                border-color={theme.colors.white}
-              >
-                Join Our Discord
-              </Button>
+              <JoinDiscordCTA />
             </Box>
           </Flex>
         </Box>

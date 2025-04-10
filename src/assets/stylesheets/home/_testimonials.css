@@ -14,17 +14,17 @@
   & .testimonialTextWrapper {
     max-width: 750px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 
     & .testimonialText {
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: var(--mantine-color-white);
       margin-bottom: 1rem;
     }
     & .testimonialName {
       color: var(--mantine-color-yellow-4);
       font-weight: bold;
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
 }
@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   overflow-x: hidden;
 }
 

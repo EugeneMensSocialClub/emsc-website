@@ -18,7 +18,7 @@
       display: flex;
       & .carouselTextContainer {
         background-color: var(--mantine-color-white);
-        padding: 2rem;
+        padding: 1rem;
         flex-direction: column;
         display: flex;
     }
@@ -50,4 +50,11 @@
 
 .dot.active {
   background-color: var(--mantine-color-orange-3);
+}
+
+@media(max-width: 768px) {
+
+  .inicatorsContainer {
+    margin-top: 1rem;
+  }
 }

@@ -7,7 +7,7 @@ export default function HomeHeroSection() {
   return (
     <Box className="heroTitleContainer">
       <Box className="heroBackgound" />
-      <Center className="heroContent">
+      <Center className="heroContent" mih={"50vh"}>
         {" "}
         <Image className="heroLogo" src={homeLogo} />
         <Box className="titleContainer">
