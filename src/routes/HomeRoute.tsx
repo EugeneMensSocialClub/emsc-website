@@ -1,13 +1,12 @@
-import { Center, Flex, Box } from "@mantine/core";
-import HomeTestimonial from "../componenets/homepage/HomeTestimonial";
-import MobileHomeTestimonial from "../componenets/homepage/mobile/MobileTestimonial";
-import HomeFeaturesSection from "../componenets/homepage/HomeFeaturesSection";
-import MobileFeaturesSection from "../componenets/homepage/mobile/MobileFeaturesSection";
-import HomeHeroSection from "../componenets/homepage/HomeHeroSection";
-import MobileHeroSection from "../componenets/homepage/mobile/MobileHeroSection";
+import { Flex } from "@mantine/core";
+import HomeCarousel from "../componenets/homepage/Carousel";
+import HomeFeaturesSection from "../componenets/homepage/Feature";
+import HomeHeroSection from "../componenets/homepage/Hero";
+import Testimonials from "../componenets/homepage/Testimonials";
 import "../assets/stylesheets/homepage.css";
 import useIsMobile from "../hooks/useIsMobile";
 import Navigation from "../componenets/Navigation";
+import JoinDiscordSection from "../componenets/homepage/JoinDiscord";
 
 export function HomeRoute() {
   const isMobile = useIsMobile();
@@ -15,19 +14,13 @@ export function HomeRoute() {
   return (
     <Flex direction={"column"}>
       <Navigation />
-      {isMobile ? <MobileHeroSection /> : <HomeHeroSection />}
-      <Center id="test-center" w={"100%"}>
-        <Box maw={1920} miw={320}>
-          <Center>
-            <Flex direction={"column"}>
-              <Center>
-                {isMobile ? <MobileFeaturesSection /> : <HomeFeaturesSection />}
-              </Center>
-            </Flex>
-          </Center>
-          {isMobile ? <MobileHomeTestimonial /> : <HomeTestimonial />}
-        </Box>
-      </Center>
+      {isMobile ? <HomeHeroSection /> : <HomeHeroSection />}
+      <Flex direction={"column"}>
+        {isMobile ? <HomeFeaturesSection /> : <HomeFeaturesSection />}
+      </Flex>
+      {isMobile ? <HomeCarousel /> : <HomeCarousel />}
+      <Testimonials />
+      <JoinDiscordSection />
     </Flex>
   );
 }

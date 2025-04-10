@@ -1,0 +1,89 @@
+
+.testimonialSection {
+  background-color: var(--mantine-color-green-3);
+  padding-top: 4rem;
+  text-align: center;
+  & .testimonialHeading {
+    font-size: 2rem;
+    color: var(--mantine-color-white);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+  & .testimonialTextWrapper {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    & .testimonialText {
+      font-size: 1rem;
+      color: var(--mantine-color-white);
+      margin-bottom: 1rem;
+    }
+    & .testimonialName {
+      color: var(--mantine-color-yellow-4);
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+}
+
+.testimonialSlide {
+  flex: 1 !important;
+}
+
+.testimonialImages {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+}
+
+.testimonialImageWrapper {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid transparent;
+  transition: filter 0.3s, border-color 0.3s;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+.testimonialImageWrapper.active {
+  filter: none;
+  border: 3px solid var(--mantine-color-yellow-4);
+}
+
+.testimonialImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 5px;
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+.fade-out {
+  animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}

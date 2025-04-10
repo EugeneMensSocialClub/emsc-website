@@ -1,0 +1,55 @@
+.discordSection {
+  position: relative;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mantine-color-orange-2);
+}
+
+.discordBackground{
+  background-image: url("../images/emsc_pattern_darkgreen.svg");
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 75%;
+  z-index: 0;
+  background-color: var(--mantine-color-orange-2); /* Optional fallback */
+  position: absolute;
+  height: 100%;
+  mask-image: linear-gradient(to right, black 0%, transparent 100%);
+}
+
+.discordContent, .discordImageWrapper {
+  position: relative;
+  z-index: 1; /* Sit above the background */
+}
+
+.discordContent{
+  max-width: 30vw;
+  flex: 1 1 50%;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--mantine-color-black);
+}
+
+.discordImageWrapper {
+  padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+
+  .discordContentWrapper {
+    flex: column;
+  }
+
+  .discordContent {
+    max-width: 100%;
+    gap: 2rem;
+  }
+  .discordTitle {
+    text-align: center;
+  }
+}

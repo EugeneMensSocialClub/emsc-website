@@ -1,0 +1,82 @@
+.heroTitleContainer {
+  color: var(--mantine-color-white);
+  position: relative;
+  overflow: hidden;
+  padding: 0 !important;
+  background-color: var(--mantine-color-green-1);
+  height: 50vh;
+  width: 100vw;
+  & .titleText {
+    font-size: clamp(16px, 7vw, 143px);
+    line-height: 80%;
+  }
+  & .heroLogo {
+    width: calc(15rem* var(--mantine-scale));
+  }
+  & .textBody {
+    font-size: clamp(16px, 1vw, 24px);
+  }
+}
+
+.titleContainer {
+  margin-left: 45px;
+  max-width: 40vw;
+  min-width: 40vw;
+}
+
+
+.heroBackgound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/EMSC_pattern.svg);
+  background-size: contain;
+  background-position: left top;
+  background-repeat: repeat-x;
+  mask-image: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 90%);
+}
+
+@media (max-width: 768px) {
+  .heroTitleContainer {
+    color: var(--mantine-color-white);
+    padding: 0 !important;
+    width: 100vw;
+    height: 50vh;
+    & .heroContent {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    & .heroLogo {
+      width: 95px;
+      /* height: ; */
+    }
+    & .titleContainer {
+      justify-content: center;
+      max-width: 85vw;
+      & .headings {
+        margin-top: 23px;
+      }
+    }
+    & .titleText {
+      text-align: center;
+      font-size: 3rem;
+    }
+    & .textBody {
+      margin-top: 23px;
+      font-size: clamp(12px, 1vw, 16px);
+    }
+  }
+  
+  .heroBackgound { 
+    background-repeat: repeat-x, repeat-y;
+    background-size: auto, 100%;
+    mask-image: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 90%);
+  }
+
+  .titleContainer {
+    margin-left: 0px;
+  }
+}

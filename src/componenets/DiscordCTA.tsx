@@ -1,29 +1,19 @@
-import { Button, Title, Box } from "@mantine/core";
+import { Button } from "@mantine/core";
 import { theme } from "../config/mantineTheme";
 
-export default function JoinMensGroupCTA() {
+export default function JoinDiscordCTA() {
   return (
-    <Box
-      size="lg"
-      style={{
-        padding: "2rem",
-        borderRadius: "8px",
-        textAlign: "center",
-      }}
+    <Button
+      component="a"
+      href="https://discord.gg/YN2HPAsQcP"
+      target="_blank"
+      maw={165}
+      color={theme.colors.green[0]}
+      radius={0}
+      border-color={theme.colors.white}
+      border-size={1}
     >
-      <Title size={"h3"} order={3} style={{ marginBottom: "1rem" }}>
-        Join the Men's Social Club
-      </Title>
-      <Button
-        component="a"
-        href="https://discord.gg/YN2HPAsQcP"
-        size="lg"
-        target="_blank"
-        aria-label={"Discord invite new tab"}
-        color={theme.colors.green[6]}
-      >
-        Sign Up Now
-      </Button>
-    </Box>
+      Join Our Discord
+    </Button>
   );
 }

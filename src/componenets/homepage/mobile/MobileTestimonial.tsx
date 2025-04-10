@@ -10,8 +10,7 @@ export default function HomeTestimonial() {
     <Flex className="testimonialContainer" direction="column">
       <Center className="tesmonialTitleContainer">
         <Title size="h3" order={2}>
-          {" "}
-          Stories from our Members
+          Our Member's Stories
         </Title>
       </Center>
       <Center>
@@ -20,7 +19,7 @@ export default function HomeTestimonial() {
           slideGap={"xl"}
           controlsOffset={"xl"}
           withControls={false}
-          withIndicators
+          withIndicators={false}
           maw={680}
           loop
         >

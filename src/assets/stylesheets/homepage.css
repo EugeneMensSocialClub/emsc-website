@@ -1,119 +1,17 @@
-.homepageContainer {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.heroTitleContainer {
-  color: var(--mantine-color-white);
-  padding: 0 !important;
-  width: 100vw;
-  & .titleText {
-    font-size: 7rem
-  }
-}
+@import '../stylesheets/home/_hero.css';
+@import '../stylesheets/home/_feature.css';
+@import '../stylesheets/home/_carousel.css';
+@import '../stylesheets/home/_testimonials.css';
+@import '../stylesheets/home/_discord.css';
+/* @import '../stylesheets/home/_media_queries.css'; */
+/* refactor css in a later brsanch */
 
-.upperWelcome {
-  margin-top: 3rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.featureSection {
-  justify-content: center;
-
-  margin-top: 6rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-
-  & .imageLeft {
-    margin-right: 3rem;
-  }
-  & .imageRight {
-    margin-left: 3rem;
-  }
-  & .textBody {
-    margin-top: 1rem;
-  }
-}
-
-.testimonialContainer {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-  margin-right: 6rem;
-  margin-left: 6rem;
-
-}
-.mantine-Carousel-control {
-  background-color: red
-}
-
-.tesmonialTitleContainer {
-  margin-bottom: 3rem;
-}
-
-#card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-
-
-  & .quoteContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--mantine-color-white);
-    font-size: 20px;
-    padding: 20px;
-    max-width: 700px;
-    z-index: 1;
-  }
-  & .quote {
-    font-style: italic;
-  }
-  & .quoteBlack {
-    color: var(--mantine-color-black);
-    font-size:20px;
-    z-index: 1;
-  }
-}
-
-.mantine-Carousel-indicators button {
-  background-color: var(--mantine-color-black);
-  margin-top: 10px;
-}
-
-.mantine-Carousel-indicators {
-  position: absolute;
-  top: 170px;
-}
-
+/* MOBILE STYLES */
 @media (max-width: 768px) {
   .upperWelcome {
     margin-top: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-
-  .featureSection {
-    justify-content: center;
-  
-    margin-top: 3rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-  
-    & .imageLeft {
-      margin-right: 0rem;
-    }
-    & .imageRight {
-      margin-left: 0rem;
-    }
-    & .textBody {
-      margin-top: 0rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
   }
 .quoteContainer {
   & .quote {
@@ -124,7 +22,6 @@
     padding-top: 10px;
   }
 }
-
 
   .testimonialContainer {
     margin-top: 3rem;
