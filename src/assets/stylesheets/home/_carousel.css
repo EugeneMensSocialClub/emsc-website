@@ -1,6 +1,6 @@
 .carouselContainer {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   max-width: 100vw;
   overflow-x: hidden;
   display: flex;
@@ -10,7 +10,6 @@
     }
     & .carouselTitle {
       color: var(--mantine-color-orange-2);
-      margin-bottom: 20px;
     }
     & .carouselSlideContent {
       height: 100%;
@@ -39,9 +38,10 @@
 .inicatorsContainer {
   margin-top: auto; /* "auto" keeps indicators at the bottom of the contentContainer */
 }
+
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: var(--mantine-color-charcoal-3);
   transition: background-color 0.3s ease;

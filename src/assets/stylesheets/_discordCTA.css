@@ -1,0 +1,10 @@
+.discordButtonWrapper {
+  border: 2px solid var(--mantine-color-white);
+}
+
+@media(max-width: 768px) {
+  .discordButtonWrapper {
+    border: 1px solid var(--mantine-color-white);
+  }
+}
+

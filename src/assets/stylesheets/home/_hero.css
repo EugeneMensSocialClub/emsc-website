@@ -42,7 +42,7 @@
   .heroTitleContainer {
     color: var(--mantine-color-white);
     padding: 0 !important;
-    height: max-content;
+    height: 480px;
     padding-top: 75px;
     & .heroContent {
       display: flex;
@@ -69,6 +69,7 @@
     & .textBody {
       margin-top: 23px;
       font-size: clamp(12px, 1vw, 16px);
+      text-align: center;
     }
   }
   

@@ -6,8 +6,8 @@ import "../assets/stylesheets/header.css";
 
 export default function Navigation() {
   return (
-    <Box className="headerContainer" bg={theme.colors.green[0]} pb={20}>
-      <Image src={transparentLogo} h={40} w={100} m={5} />
+    <Box className="headerContainer" bg={theme.colors.green[0]}>
+      <Image className="navImage" src={transparentLogo} />
       <Group className="navGroup">
         <JoinDiscordCTA />
       </Group>

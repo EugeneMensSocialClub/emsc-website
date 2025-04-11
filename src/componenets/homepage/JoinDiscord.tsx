@@ -11,9 +11,23 @@ export default function JoinDiscordSection() {
       <Box className="discordBackground" />
       <Flex className="discordContentWrapper">
         <Box className="discordContent">
-          <Title order={2} className="discordTitle">
-            START CREATING YOUR OWN CONNECTIONS
-          </Title>
+          <Box className="discordTitleWrapper">
+            <Title
+              order={2}
+              className="discordTitle"
+              size={isMobile ? "h3" : "h2"}
+            >
+              START CREATING
+            </Title>
+            <Title
+              order={2}
+              className="discordTitle"
+              size={isMobile ? "h3" : "h2"}
+            >
+              YOUR OWN CONNECTIONS
+            </Title>
+          </Box>
+
           <Text className="discordText">
             All of our hobbies, interests, and discussions are housed under one
             roof. If you’ve never used Discord, don’t sweat it! Come on in and

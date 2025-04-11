@@ -23,23 +23,32 @@
 .discordContent, .discordImageWrapper {
   position: relative;
   z-index: 1; /* Sit above the background */
+  padding: 4rem 2rem;
+
 }
 
 .discordContent{
   max-width: 30vw;
   flex: 1 1 50%;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: var(--mantine-color-black);
-}
-
-.discordImageWrapper {
-  padding: 4rem 2rem;
+  & .discordText {
+    margin-bottom: 1rem;
+  }
+  & .discordTitleWrapper {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
+
+  .discordBackground {
+    width: 100%;
+    mask-image: none;
+  }
 
   .discordContentWrapper {
     flex: column;
@@ -47,9 +56,12 @@
 
   .discordContent {
     max-width: 100%;
-    gap: 2rem;
+    text-align: center;
+
   }
   .discordTitle {
     text-align: center;
+    width: 100%;
+    line-height: 2rem !important;
   }
 }
