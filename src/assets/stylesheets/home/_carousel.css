@@ -22,7 +22,7 @@
         display: flex;
     }
     & .carouselImage {
-      flex: one;
+      flex: 1;
     }
   }
 }

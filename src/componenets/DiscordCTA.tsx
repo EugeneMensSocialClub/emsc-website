@@ -14,9 +14,7 @@ export default function JoinDiscordCTA() {
         color={theme.colors.green[0]}
         radius={0}
         size={isMobile ? "xs" : "sm"}
-        w={112}
-        h={33}
-        p={0}
+        p={5}
       >
         Join Our Discord
       </Button>

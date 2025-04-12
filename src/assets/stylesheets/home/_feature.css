@@ -7,11 +7,9 @@
   & .textBody {
     max-width: 568px;
     margin-top: 1rem;
-    margin-left: 1rem;
     margin-bottom: 1rem;
   }
   & .titleContainer{
-    max-width: 100%;
     width: 100%;    
   }
   & .titleFrame {
