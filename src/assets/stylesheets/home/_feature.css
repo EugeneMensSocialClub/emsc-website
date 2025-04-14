@@ -13,6 +13,9 @@
     width: 100%;    
   }
   & .titleFrame {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     border-style: solid;
     border-color: var(--mantine-color-white);
     border-width: 1px;
@@ -29,7 +32,6 @@
 @media (max-width: 768px) {
 
   .featureSection {
-    justify-content: center;
     margin-left: 0rem;
     margin-right: 0rem;
     
@@ -46,8 +48,9 @@
         width: 100%;
       }
       & .titleFrame{
+        text-align: center;
+        justify-content: center;
         background-color: var(--mantine-color-green-0);
-        justify-self: center;
         width: 80%;
       }
       & .image{
