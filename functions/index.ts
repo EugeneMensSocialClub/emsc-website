@@ -6,7 +6,6 @@
  *
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
-import 'dotenv/config'
 import {onRequest} from "firebase-functions/v2/https";
 import logger from "firebase-functions/logger";
 import { discordService } from './services/discordService.js';
