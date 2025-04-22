@@ -1,8 +1,4 @@
-import { Router } from "express";
-import { eventRoutes } from "./events.js";
+import { onRequest } from "firebase-functions/v2/https";
+import { getScheduledEventsHandler } from "../controllers/events";
 
-const router = Router();
-
-router.use("/events", eventRoutes);
-
-export { router as routes };
+export const getScheduledEvents = onRequest(getScheduledEventsHandler);

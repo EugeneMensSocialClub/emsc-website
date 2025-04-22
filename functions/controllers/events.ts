@@ -2,7 +2,7 @@ import * as functions from "firebase-functions";
 import { discordService } from "../services/discordService";
 import { AppError } from "../errors/errorHandler";
 
-export const getScheduledEvents = functions.https.onRequest(async (req, res) => {
+export const getScheduledEventsHandler = functions.https.onRequest(async (req, res) => {
   try {
     const guildId = String(process.env.DISCORD_GUILD_ID);
     if (!guildId) {
